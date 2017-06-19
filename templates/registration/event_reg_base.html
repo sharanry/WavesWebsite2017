@@ -1,0 +1,165 @@
+
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+<!--     <link rel="icon" href="../../favicon.ico">
+ -->
+    <title>{{ event }} Resgistration</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Slackey" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600" rel="stylesheet"> 
+
+    <!-- Custom styles for this template -->
+    <link href="/static/assets/css/clean-blog.css" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- <link href="https://v4-alpha.getbootstrap.com/examples/signin/signin.css" rel="stylesheet"> -->
+    <link href="shttps://v4-alpha.getbootstrap.com/examples/starter-template/starter-template.css" rel="stylesheet">
+    <style type="text/css">
+    img.invert {
+        filter: invert(100%);
+        -webkit-filter: invert(1);
+    }
+    .navbar-brand{
+
+    font-family: 'Bitter', serif;Helvetica,Arial,sans-serif;
+
+    }
+    form{
+      
+    font-family: 'Bitter', serif;
+
+    }
+    section#contact {
+      background-color: #222;
+      background-image: url("/static/map-image.png");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    section {
+      padding: 150px 0;
+      display: block;
+      font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #333;
+
+    }
+
+
+    </style>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top" >
+        <a class="navbar-brand" href="/">
+    <img class="invert" src="/static/logo.jpg" width="90" height="30" class="d-inline-block align-top" alt="Waves17">
+    
+        </a>
+      
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand"  href="{{ url }}">{{ event }}</a>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#registerparent">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Countact Us</a>
+          </li>
+          
+          
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Quick Links</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li> -->
+        </ul>
+        
+      </div>
+    </nav>
+    <header class="intro-header" style="background-image: url('{{ bkimgh }}');">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>{{ event }}</h1>
+                        <hr class="small">
+                        <!-- <span class="subheading">A Clean Blog Theme by Start Bootstrap</span> -->
+                        <p><a class="btn btn-secondary btn-lg" href="#registerparent" role="button">Register Now »</a></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p>{{ intro }}</p>
+                <p>{{ intro2 }}</p>
+                <p>{{ intro3 }}</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container" id="registerparent">
+
+
+    {% block content %}
+    {% endblock content %}
+    
+
+
+
+    </div> <!-- /container -->
+    
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="section-heading" style="color:white;">Contact Us</h2>
+                    <h3 class="section-subheading text-muted">Feel free to contact us for any queries.</h3>
+                </div>
+            </div>
+            <div class="row text-center" style="color:white;padding-top:5%;">
+                <div class="col-lg-6">
+                    <h3>Aravind Venugopal</h3>
+                    <h4>+91 75076 89437</h4>
+                </div>
+                <div class="col-lg-6">
+                    <h3>Srivats Mohan</h3>
+                    <h4>----------------</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="https://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="https://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

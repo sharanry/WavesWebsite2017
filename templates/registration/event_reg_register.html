@@ -1,0 +1,78 @@
+{% extends "registration/event_reg_base.html" %}
+
+{% block content %}
+ 	<style type="text/css">
+		#register{
+			/*background-image: url("{{ bkimg }}");
+			background-size: 100% 100%;
+    		background-repeat: no-repeat;*/
+    		padding: 5%;
+    		margin-left: 0;
+    		margin-right: 0;
+		}
+		/*#registerparent{
+			margin-left: 0;
+    		margin-right: 0;
+		}*/
+		.jumbotron{
+			opacity: 0.5;
+			padding: 1rem 1rem 1rem 1rem;
+		}
+		
+		.form-group,.btn-outline-secondary{
+			opacity: 1;
+			color: black;
+		}
+
+		
+		.form-control{
+			padding: 0.05rem;
+		}
+		#contact{
+			{
+    	background-color: #898a89;
+    	border-color: #969696;
+    	color: #fff;
+		}
+
+		}
+		#registerparent{
+			padding-top: 1%;
+		}
+	</style>
+    
+    <div style="margin-top:10%; " class="container" id ="register">
+    	<h1 style="text-align:center; font-family: 'Montserrat', sans-serif; " class="text-center">Register Now</h1>
+	    <form style="margin-top:5%" method="POST" class="well form-horizontal " id="contactForm" action='.'>{% csrf_token %}
+	    	
+	        {% for field in form %}
+	        <div class="form-group row">
+	        	<label class="control-label col-sm-4 col-form-label" style="text-align:right; 
+    font-family: 'Montserrat', sans-serif;
+" >{{ field.label_tag }}  </label>
+	           	<div class="col-md-4 inputGroupContainer">
+		  			<div class="input-group">
+			  			<!-- <span class="input-group-addon"><i class=""></i></span> -->
+			  			<div class="form-control col-sm-12" > 
+			  			{{ field }}
+	           			</div>
+		    		</div>
+	  			</div>
+	  			<div class="col-md-4 form-group has-errors text-danger small">
+	  				{{ field.errors }}
+	  			</div>
+			</div>
+	    	{% endfor %}
+	    	
+			<div class='row'>    
+			     <div class="col-5"></div>
+			    <div class="col align-self-center">
+			        <input class='btn btn-outline-secondary btn-lg  text-center center-block' type='submit' value='Register &raquo;'/>
+			    </div>
+			     <div class="col-5"></div>
+	    	</div>
+
+	    </form>
+	</div>
+  
+{% endblock content %}
