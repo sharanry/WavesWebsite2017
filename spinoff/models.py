@@ -11,7 +11,7 @@ class SpinoffParticipant(models.Model):
 	CITIES = 	[	
 					("Bangalore","Bangalore"),
 		 			("Pune","Pune"),
-		  			("Lucknow","Lucknow"),
+		  			("Mumbai","Mumbai"),
 		   			("Delhi","Delhi")
 	   			]
 
