@@ -14,7 +14,7 @@ class AdminSettings(admin.ModelAdmin):
                   'preferredCity',
                   'email',
                   'phone_number',
-                  'prior_experience_if_any',
+                  'links_to_previous_performances',
                   'creation_datetime')
     # add filtering by date
     list_filter = ('creation_datetime',)

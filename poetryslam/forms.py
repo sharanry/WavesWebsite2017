@@ -6,7 +6,7 @@ from . import models
 
 
 class register(forms.ModelForm):
-  prior_experience_if_any = forms.CharField(required=False, max_length=300,  widget=forms.Textarea)
+  links_to_previous_performances = forms.CharField(required=False, max_length=300,  widget=forms.Textarea)
   class Meta:
       model = models.InverseParticipant
       fields = [  'name',
@@ -15,5 +15,5 @@ class register(forms.ModelForm):
                   'preferredCity',
                   'email',
                   'phone_number',
-                  'prior_experience_if_any'
+                  'links_to_previous_performances'
               ]

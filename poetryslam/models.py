@@ -21,7 +21,7 @@ class InverseParticipant(models.Model):
 	preferredCity = models.CharField(choices=CITIES, max_length=20)
 	email = models.EmailField()
 	phone_number = models.CharField(max_length=12, unique=True)
-	prior_experience_if_any = models.CharField( max_length=300, blank=True, null=True)
+	links_to_previous_performances = models.CharField( max_length=300, blank=True, null=True)
 
 	creation_datetime = models.DateTimeField(auto_now_add=True)
 	

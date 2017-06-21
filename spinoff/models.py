@@ -24,7 +24,7 @@ class SpinoffParticipant(models.Model):
 	# phone_regex = RegexValidator( message="Phone number must be entered in the format: '+999999999'. Up to 15 digits allowed.")
 	# phone = models.IntegerField( min_value=1000000, max_value=99999999999, unique=True, )
 	phone_number = models.CharField(max_length=12, unique=True)
-	prior_experience_if_any = models.CharField( max_length=300, blank=True, null=True)
+	links_to_previous_performances = models.CharField( max_length=300, blank=True, null=True)
 
 	creation_datetime = models.DateTimeField(auto_now_add=True)
 	# datetime = models.ForeignKey(DateTime)

@@ -46,12 +46,12 @@ class smtfreg(View):
 			preferredCity = form. cleaned_data.get("preferredCity")
 			email = form.cleaned_data.get("email")
 			phone_number = form.cleaned_data.get("phone_number")
-			prior_experience_if_any = form. cleaned_data.get("prior_experience_if_any")
+			links_to_previous_performances = form. cleaned_data.get("links_to_previous_performances")
 
 
 
 			
-			obj = SmtfParticipant(name=name, place=place, occupation=occupation, preferredCity=preferredCity, email= email, phone_number=phone_number, prior_experience_if_any=prior_experience_if_any)
+			obj = SmtfParticipant(name=name, place=place, occupation=occupation, preferredCity=preferredCity, email= email, phone_number=phone_number, links_to_previous_performances=links_to_previous_performances)
 			
 			try:
 				obj.save()
