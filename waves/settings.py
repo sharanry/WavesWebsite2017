@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'spinoff',
     'smtf',
     'poetryslam',
+    'home',
 ]
 
 MIDDLEWARE = [
