@@ -40,7 +40,7 @@ INSTALLED_APPS = [
 
 
     # third party apps
-    'phonenumber_field',
+    # 'phonenumber_field'
     # coustom apps
     'spinoff',
     'smtf',
