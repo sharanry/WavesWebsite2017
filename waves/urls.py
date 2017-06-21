@@ -29,10 +29,10 @@ from django.conf.urls.static import static
 
 
 urlpatterns = [
-    url(r'^/', home.as_view(), name='home'),
     url(r'^admin/', admin.site.urls),
     url(r'^spinoff/reg/', spinoffreg.as_view(), name='spinoffreg'),
     url(r'^smtf/reg/', smtfreg.as_view(), name='smtfreg'),
     url(r'^inverse/reg/', inversereg.as_view(), name='inversereg'),
+    url(r'^', home.as_view(), name='home'),
     
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
