@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="/static/assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 		<link rel="stylesheet" href="/static/assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="/static/assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="/static/assets/css/ie8.css" /><![endif]-->
@@ -55,7 +56,19 @@
 							<header>
 								<h1>Come witness the magic this Waves!</h1>
 								<p>Theme releasing soon. For any assistance, reach out to us:</p>
-								<a href="{% url 'spinoffreg' %}"><h2>Register for SpinOff here</h2></a>
+								<a ><h2>Register here:</h2></a>
+								<div class="row">
+									<div class="col-md-3"></div>
+									<div class="text-center col-md-6">
+												<ul class="actions">
+													<li ><a target="_blank" href="{% url 'spinoffreg' %}" class="button special">SpinOff</a></li>
+													<li ><a target="_blank" href="{% url 'inversereg' %}" class="button special">InVerse</a></li>
+													<li ><a target="_blank" href="{% url 'smtfreg' %}" class="button special">SMTF</a></li>
+												</ul>
+												
+									</div>
+									<div class="col-md-3"></div>
+								</div>
 							</header>
 							<section class="tiles">
 							<article class="style1">
@@ -181,7 +194,7 @@
 									<a href="#">
 										<h2>Professional Nights Head</h2>
 										<div class="content">
-											<p>Kartik kumar saxena<br>+91 8447270128</p>
+											<p>Kartik Kumar Saxena<br>+91 8447270128</p>
 										</div>
 									</a>
 								</article>
