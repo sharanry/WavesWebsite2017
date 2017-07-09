@@ -114,7 +114,21 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <p>{{ intro }}</p>
                 <p>{{ intro2 }}</p>
-                <p>{{ intro3 }}</p>
+                <p>{{ intro3 | linebreaks }}</p>
+                {% if event == 'inVerse' %}
+                    <h2>Rules</h2>
+                    <ol>
+                      <li>Contestants will have to submit the poem (in text format) that they will be performing in their respective cities, during online registrations. The poem needs to be written down directly in the field and mailed to <a href="mailto:litsoc.bpgc@gmail.com">litsoc.bpgc@gmail.com</a>. <strong>Entries without transcript of the poem will not be considered.</strong> 20 poets will be selected to perform in every city, for the Regionals.
+                      </li>
+                      <li>The poem must be of the poet's own construction and must be in the English language.</li>
+                      <li>Poems can be on any subject and in any style - you can go crazy! (In fact, it would be advisable to do so :P)</li>
+                      <li>Each poet gets three minutes (plus a ten-second grace period) to read one poem. If the poet goes over time, points will be deducted from the total score.</li>
+                      <li>The poet may not use props, costumes, or musical instruments.</li>
+                      <li>The judges will give each poem a score and the number of contestants chosen to go through to the Finals will depend on the total number of contestants in the city, to ensure fairness. </li>
+                      <li>Participants must be under 25 years old.</li>
+                      <!-- 2.  3.  \n 4.  \n 5.  \n 6. \n 7. --> 
+                    </ol>
+                {% endif %}
             </div>
         </div>
     </div>

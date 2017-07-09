@@ -49,7 +49,7 @@
 	        <div class="form-group row">
 	        	<label class="control-label col-sm-4 col-form-label" style="text-align:right; 
     font-family: 'Montserrat', sans-serif;
-" >{{ field.label_tag }}  </label>
+" >{% if event == 'inVerse' and  field.label == "Links to previous performances" %} Link of Google Doc of poem or actual poem itself:{% else %} {{ field.label_tag }} {% endif %}  </label>
 	           	<div class="col-md-4 inputGroupContainer">
 		  			<div class="input-group">
 			  			<!-- <span class="input-group-addon"><i class=""></i></span> -->
