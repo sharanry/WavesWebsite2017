@@ -20,7 +20,7 @@ from spinoff.views import spinoffreg
 from smtf.views import smtfreg
 from poetryslam.views import inversereg
 from home.views import home
-
+from csr.views import csr, csrreg
 
 # for static
 from django.conf import settings
@@ -29,10 +29,12 @@ from django.conf.urls.static import static
 
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^spinoff/reg/', spinoffreg.as_view(), name='spinoffreg'),
-    url(r'^smtf/reg/', smtfreg.as_view(), name='smtfreg'),
-    url(r'^inverse/reg/', inversereg.as_view(), name='inversereg'),
+    url(r'^admin', admin.site.urls),
+    url(r'^spinoff/reg', spinoffreg.as_view(), name='spinoffreg'),
+    url(r'^smtf/reg', smtfreg.as_view(), name='smtfreg'),
+    url(r'^inverse/reg', inversereg.as_view(), name='inversereg'),
+    url(r'^csr/reg', csrreg.as_view(), name='csrreg'),
+    url(r'^csr', csr.as_view(), name='csr'),
     url(r'^', home.as_view(), name='home'),
     
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
