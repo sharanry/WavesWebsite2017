@@ -263,7 +263,7 @@ span.menu{
 .letter-bottom{
 	margin-top:3%;
 }
-.letter-bottom form input[type="text"] {
+.letter-bottom form input[type="text"], .letter-bottom form input[type="email"] {
     width: 31%;
     color: rgba(255, 255, 255, 0.52);
     background: none;
@@ -733,16 +733,16 @@ figure.effect-oscar:hover img {
 .events-top p, .contact-form p, .why-top p {
     width: 100% !important;
 }
-.contact-bottom input[type="text"]:nth-child(1), .contact-bottom input[type="text"]:nth-child(2) {
+.contact-bottom input[type="text"]:nth-child(1), .contact-bottom input[type="text"]:nth-child(2), .contact-bottom input[type="email"]:nth-child(1), .contact-bottom input[type="email"]:nth-child(2) {
     width: 48.98%;
 }
-.contact-bottom input[type="text"]:nth-child(1){
+.contact-bottom input[type="text"]:nth-child(1), .contact-bottom input[type="email"]:nth-child(1){
 	margin-right:10px;
 }
-.contact-bottom input[type="text"]:nth-child(3){
+.contact-bottom input[type="text"]:nth-child(3), .contact-bottom input[type="email"]:nth-child(3){
 	width:100%;
 }
-.contact-bottom input[type="text"], .contact-bottom textarea {
+.contact-bottom input[type="text"], .contact-bottom input[type="email"], .contact-bottom textarea {
     margin-bottom: 10px;
     color: #999;
     background: none;
@@ -1312,7 +1312,7 @@ a.tooltips span:before {
 .team-bottom {
     margin-top: 3%;
 }
-.letter-bottom form input[type="text"] {
+.letter-bottom form input[type="text"], .letter-bottom form input[type="email"] {
     padding: 8px 10px;
 }	
 .letter-bottom form input[type=submit] {
@@ -1356,13 +1356,13 @@ a.tooltips span:before {
 .contact {
     padding: 2.5em 0px 2.5em 0px;
 }
-.contact-bottom input[type="text"]:nth-child(1) {
+.contact-bottom input[type="text"]:nth-child(1), .contact-bottom input[type="email"]:nth-child(1) {
     margin-right: 8px;
 }
 .map iframe {
     height: 225px;
 }
-.contact-bottom input[type="text"], .contact-bottom textarea {
+.contact-bottom input[type="text"], .contact-bottom input[type="email"], .contact-bottom textarea {
     font-size: 12px;
 }
 .submit-btn input[type=submit] {
@@ -1473,7 +1473,7 @@ figure.effect-oscar figcaption {
 .letter-top {
     padding: 2em 0px;
 }
-.letter-bottom form input[type="text"] {
+.letter-bottom form input[type="text"], .letter-bottom form input[type="email"] {
     padding: 7px 10px;
     width: 35%;
 }
@@ -1530,10 +1530,10 @@ figure.effect-oscar figcaption {
 .map iframe {
     height: 190px;
 }
-.contact-bottom input[type="text"]:nth-child(1) {
+.contact-bottom input[type="text"]:nth-child(1), .contact-bottom input[type="email"]:nth-child(1) {
     margin: 0 0 6px 0;
 }
-.contact-bottom input[type="text"]:nth-child(1), .contact-bottom input[type="text"]:nth-child(2) {
+.contact-bottom input[type="text"]:nth-child(1), .contact-bottom input[type="text"]:nth-child(2), .contact-bottom input[type="email"]:nth-child(1), .contact-bottom input[type="email"]:nth-child(2) {
     width: 100%;
 }
 .submit-btn input[type=submit] {
@@ -1653,7 +1653,7 @@ figure.effect-oscar figcaption {
 .letter-top {
     padding: 1.5em 0px;
 }
-.letter-bottom form input[type="text"] {
+.letter-bottom form input[type="text"], .letter-bottom form input[type="email"] {
     padding: 6px 10px;
     width: 38%;
     font-size: 11px;
@@ -1856,7 +1856,7 @@ figure.effect-oscar figcaption {
 .letter-top h3 {
     font-size: 1.3em !important;
 }
-.letter-bottom form input[type="text"] {
+.letter-bottom form input[type="text"], .letter-bottom form input[type="email"] {
     width: 90%;
     margin: 0 0 12px 0;
 	border-right:1px solid #fff;
@@ -1980,7 +1980,7 @@ h5.hd {
 .well {
     font-size: 15px;
 }
-.contact-bottom input[type="text"], .contact-bottom textarea {
+.contact-bottom input[type="text"], .contact-bottom input[type="email"], .contact-bottom textarea {
     padding: 8px 10px;
 }
 }

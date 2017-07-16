@@ -33,8 +33,10 @@ class register(forms.ModelForm):
                     'style': 'width: 35%; padding: 5px; margin: 5px;',
                     'placeholder': "City"
                                        }),
-          'address':forms.TextInput(attrs = { 
+          'address':forms.Textarea(attrs = { 
                     'style': 'width: 71.5%;',
+                    'rows': 5,
                     'placeholder': "Address"
+
                                        }),
       }
