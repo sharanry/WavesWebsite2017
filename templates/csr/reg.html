@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Waves 2017 | The Ripple Project Registration</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Waves 2017, Waves Bits Goa, Bits Goa, Goa, Charity, Teach for India, Non Government organisation" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="/static/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="/static/css/style.css" rel='stylesheet' type='text/css' />
+<script src="/static/js/jquery.min.js"></script>
+<!--start-smoth-scrolling-->
+<script type="text/javascript" src="/static/js/move-top.js"></script>
+<script type="text/javascript" src="/static/js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!--start-smoth-scrolling-->
+</head>
+<body>
+	<!--head-->
+	<div class="head" id="home">
+		<div class="container">
+			<div class="head-top">
+				<div class="col-md-6 h-left">
+					<p>+123 456 7897 , +132 567 8977</p>
+				</div>
+				<div class="col-md-6 h-right">
+					<ul>
+						<li><a href="#"><span class="fb"> </span></a></li>
+						<li><a href="#"><span class="twit"> </span></a></li>
+						<li><a href="#"><span class="pin"> </span></a></li>
+						<li><a href="#"><span class="rss"> </span></a></li>
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>	
+		</div>
+	</div>
+	<!--head-->
+	<!--header-->	
+	<div class="header">
+		<div class="container">
+			<div class="header-main">
+				<div class="logo">
+					<a href="index.html"><img src="/static/images/logo.PNG" alt="" style="width: 32%"></a>
+				</div>
+				<div class="head-right">	   		
+					<div class="top-nav">
+						<span class="menu"><img src="/static/images/nav-icon.png" alt=""> </span>
+						<ul>
+							<li><a href="index.html"  class="active"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+							<li><a href="index.html#helpstart"><span class="glyphicon glyphicon-info-sign"></span>Cause</a></li>							
+							<li><a href="index.html#whatwedo"><span class="glyphicon glyphicon-certificate"></span>What We do</a></li>	
+							<li><a href="gallery.html"><span class="glyphicon glyphicon-picture"></span>Media</a></li>								
+							<li><a href="reg.html"><span class="glyphicon glyphicon-envelope"></span>Join the Movement</a></li>
+							<div class="clearfix"> </div>
+						</ul>
+						<!--script-->
+					<script>
+						$("span.menu").click(function(){
+							$(".top-nav ul").slideToggle(500, function(){
+							});
+						});
+					</script>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>	
+		</div>
+	</div>
+	<!--//header-->
+	<!--contact-starts-->
+	<div class="contact">
+			
+			<div class="contact-form heading">
+				<h3>Volunteer Registration</h3>
+				<p>Line on why to volunteer goes here.</p>
+				<div class="contact-bottom">
+					<form method="POST">
+						{% csrf_token %}
+						{% for hidden in form.hidden_fields %}
+							{{ hidden }}
+							{% endfor %}
+						{% for field in form %}
+						    <!-- <div class="form-group"> -->
+						        <!-- {{ field.label_tag }} --> {{ field }}
+						    <!-- </div> -->
+						{% endfor %}
+
+
+						<div class="submit-btn">
+							<input type="submit" value="Submit">
+						</div>
+					</form>
+				</div>
+			</div>
+			<!--<div class="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d47753.14235372253!2d-87.8390792!3d41.57851990000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1skohl&#39;s!5e0!3m2!1sen!2sin!4v1436335323316" style="border:0" allowfullscreen></iframe>
+			</div>-->
+		</div>
+	</div>
+	<!--contact-end-->
+	<!--address-starts-->
+	<div class="address">
+		<div class="container">
+			<div class="address-top">
+				<div class="col-md-4 add-left">
+					<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+					<p><label>BITS Pilani, KK Birla Goa Campus</label>
+						</p>
+				</div>
+				<div class="col-md-4 add-left">
+					<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+					<p>+91 89766 95524 ,<br> +91 75076 89437
+					</p>
+				</div>
+				<div class="col-md-4 add-left">
+					<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+					<p><a href="mailto:example@email.com">aravindv@bits-waves.org</a></p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--address-end-->
+	<!--footer-starts-->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-top">
+				<a href="index.html"><h3>Waves 2017</h3></a>
+				<p>Site Design: <a href="http://www.prefedge.com">Aryan Agarwal</a></p>
+				<p>Backend: <a href="http://sharanry.github.io">Sharan RY</a></p>
+				<a href="#home" class="scroll"><img src="/static/images/top-arrow.png" alt="" /></a>
+			</div>
+		</div>
+	</div>
+	<!--footer-end-->
+</body>
+</html>
