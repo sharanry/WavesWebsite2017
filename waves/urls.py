@@ -21,6 +21,7 @@ from smtf.views import smtfreg
 from poetryslam.views import inversereg
 from home.views import home
 from csr.views import csr, csrreg
+from registration.views import reg
 
 # for static
 from django.conf import settings
@@ -33,8 +34,9 @@ urlpatterns = [
     url(r'^spinoff/reg', spinoffreg.as_view(), name='spinoffreg'),
     url(r'^smtf/reg', smtfreg.as_view(), name='smtfreg'),
     url(r'^inverse/reg', inversereg.as_view(), name='inversereg'),
-    url(r'^csr/reg', csrreg.as_view(), name='csrreg'),
-    url(r'^csr', csr.as_view(), name='csr'),
+    url(r'^reg', reg.as_view(), name='reg'),
+    url(r'^socialcause/reg', csrreg.as_view(), name='csrreg'),
+    url(r'^socialcause', csr.as_view(), name='csr'),
     url(r'^', home.as_view(), name='home'),
     
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
