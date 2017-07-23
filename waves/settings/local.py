@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'smtf',
     'poetryslam',
     'csr',
+    'registration',
     'home',
 
 ]
