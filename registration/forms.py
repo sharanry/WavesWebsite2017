@@ -67,7 +67,7 @@ class register(forms.ModelForm):
                     'autocomplete': "off",
                                        }),
           'phone_number': forms.TextInput(attrs = { 
-                    'class': "testbox",
+                    'class': "textbox",
                     # 'type': "textbox",
                     'placeholder': "Enter Your Contact No.",
                     'autocomplete': "off",
