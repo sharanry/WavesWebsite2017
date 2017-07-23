@@ -551,6 +551,9 @@ body{
   background: -webkit-linear-gradient(#6b92b9, #000000);
   background: -moz-linear-gradient(#6b92b9, #000000);
   background: -linear-gradient(#6b92b9, #000000);
+  position: fixed;
+  top: 0;
+  z-index: 5;
 }
 canvas {
   display: block;
