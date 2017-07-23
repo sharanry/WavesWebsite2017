@@ -49,7 +49,7 @@ class register(forms.ModelForm):
           #                              }),
           
           'email':forms.EmailInput(attrs = { 
-                    'class': "textbox1",
+                    'class': "textbox",
                     # 'type': "text",
                     'placeholder': "Enter Your Email",
                     'autocomplete':"off",
