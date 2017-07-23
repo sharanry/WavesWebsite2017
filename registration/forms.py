@@ -17,36 +17,67 @@ class register(forms.ModelForm):
                   
               ]
       widgets = {
+          # 'email':forms.EmailInput(attrs = { 
+          #           'class': "email",
+          #           # 'type': "text",
+          #           'placeholder': "ENTER YOUR E-MAIL HERE",
+          #           'autocomplete':"off",
+          #                              }),
+          # 'name': forms.TextInput(attrs = { 
+          #           'class': "name",
+          #           # 'type': "text",
+          #           'placeholder': "ENTER YOUR NAME HERE",
+          #           'autocomplete': "off",
+          #                              }),
+          # 'college':forms.TextInput(attrs = { 
+          #           'class': "college",
+          #           # 'type': "text",
+          #           'placeholder': "ENTER YOUR COLLEGE NAME HERE",
+          #           'autocomplete': "off",
+          #                              }),
+          # 'phone_number': forms.TextInput(attrs = { 
+          #           'class': "number",
+          #           # 'type': "text",
+          #           'placeholder': "ENTER YOUR PHONE NUMBER HERE",
+          #           'autocomplete': "off",
+          #                              }),
+          # 'event': forms.TextInput(attrs = { 
+          #           'class': "events",
+          #           # 'type': "text",
+          #           'placeholder': "EVENTS YOU WISH TO JOIN",
+          #           'autocomplete': "off",
+          #                              }),
+          
           'email':forms.EmailInput(attrs = { 
-                    'class': "email",
+                    'class': "textbox1",
                     # 'type': "text",
-                    'placeholder': "ENTER YOUR E-MAIL HERE",
+                    'placeholder': "Enter Your Email",
                     'autocomplete':"off",
                                        }),
           'name': forms.TextInput(attrs = { 
-                    'class': "name",
+                    'class': "textbox",
                     # 'type': "text",
-                    'placeholder': "ENTER YOUR NAME HERE",
+                    'placeholder': "Enter Your Name",
                     'autocomplete': "off",
                                        }),
           'college':forms.TextInput(attrs = { 
-                    'class': "college",
+                    'class': "textbox",
                     # 'type': "text",
-                    'placeholder': "ENTER YOUR COLLEGE NAME HERE",
+                    'placeholder': "Enter Your College name",
                     'autocomplete': "off",
                                        }),
           'phone_number': forms.TextInput(attrs = { 
                     'class': "number",
-                    # 'type': "text",
-                    'placeholder': "ENTER YOUR PHONE NUMBER HERE",
+                    # 'type': "textbox",
+                    'placeholder': "Enter Your Contact No.",
                     'autocomplete': "off",
                                        }),
           'event': forms.TextInput(attrs = { 
-                    'class': "events",
+                    'class': "textbox",
                     # 'type': "text",
-                    'placeholder': "EVENTS YOU WISH TO JOIN",
+                    'placeholder': "Event You Want To Register For",
                     'autocomplete': "off",
                                        }),
-
+          
                                        
       }

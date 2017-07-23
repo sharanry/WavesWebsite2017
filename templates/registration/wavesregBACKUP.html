@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Waves 2017, Waves Bits Goa, Bits Goa, Goa, Charity, Teach for India, Non Government organisation" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+  <title>Waves 2017 | Registration Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/reg/css/bootrap.min.css">
+    <link rel="stylesheet" href="/static/reg/css/style.css">
+    <script type="text/javascript" src="/static/reg/js/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="/static/reg/js/fire-0.62.min.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js' type="text/javascript"></script>
+    <script type="text/javascript" src="/static/reg/js/snow.js"></script>
+    <script type="text/javascript" src="/static/reg/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript">var $i = jQuery.noConflict();</script>
+    <script>
+    <!--
+  $(document).ready( function(){
+    $('.fire').fire({
+      speed:20,
+      maxPow:9,
+      gravity:0,
+      flameWidth:3,
+      flameHeight:0,
+      plasm:false,
+
+      fireTransparency:0,
+      fadingFlameSpeed:8,
+      mouseEffect:true
+    }); 
+  });
+    -->
+    </script>
+    <script type="text/javascript">
+      email.addEventListener("input", function (event) {
+  if (email.validity.typeMismatch) {
+    email.setCustomValidity("Please refresh the page and enter correct email format");
+  } else {
+    email.setCustomValidity("");
+  }
+});
+    </script>
+</head>
+
+<body>
+<!--code for ice-->
+<div class="snow1 col-md-12">
+    <canvas id="canvas" style=""></canvas>
+</div>
+<!--code for ice ends-->
+<!--code for form begins-->
+<div class="back"></div>
+
+<a href="/">
+<div class="logo">
+<img src="/static/reg/logo/logo-1.png" style="">
+</div>
+</a>
+
+<div class="registration-form col col-md-8">
+  <header>
+    <h1>Register For Waves</h1>
+    <p>Fill in all informations</p>
+  </header>
+  <form id="waves-reg"  method="POST">
+    {% csrf_token %}
+    <div class="input-section email-section">
+      <!-- <input class="email" type="text" placeholder="ENTER YOUR E-MAIL HERE" autocomplete="off"/> -->
+      {{ form.email }}
+      <div class="animated-button"><span class="icon-paper-plane"><i class="fa fa-envelope-o"></i></span><span class="next-button email"><i class="fa fa-arrow-up"></i></span></div>
+    </div>
+    <div class="input-section name-section folded">
+      <!-- <input class="name" type="text" placeholder="ENTER YOUR NAME HERE" autocomplete="off"/> -->
+      {{ form.name }}
+      <div class="animated-button"><span class="icon-user"><i class="fa fa-user"></i></span><span class="next-button name"><i class="fa fa-arrow-up"></i></span></div>
+    </div> 
+     <div class="input-section college-section folded">
+      <!-- <input class="college" type="text" placeholder="ENTER YOUR COLLEGE NAME HERE" autocomplete="off"/> -->
+      {{ form.college }}
+      <div class="animated-button"><span class="icon-building"><i class="fa fa-university"></i></span><span class="next-button college"><i class="fa fa-arrow-up"></i></span></div>
+    </div>
+     <div class="input-section number-section folded">
+      <!-- <input class="number" type="text" placeholder="ENTER YOUR PHONE NUMBER HERE" autocomplete="off"/> -->
+      {{ form.phone_number }}
+      <div class="animated-button"><span class="icon-mobile-phone"><i class="fa fa-mobile-phone"></i></span><span class="next-button number"><i class="fa fa-arrow-up"></i></span></div>
+    </div>
+    <div class="input-section events-section folded">
+      <!-- <input class="events" type="text" placeholder="EVENTS YOU WISH TO JOIN" autocomplete="off"/> -->
+      {{ form.event }}
+      <!-- <div class="animated-button"><s<div class="animated-button"><span class="icon-trophy"><i class="fa fa-trophy"></i></span><button type="submit" class="next-button events" style="font-weight: 100; font-size:25px;    line-height: 75px"><i class="fa fa-arrow-up"></i></button></div> -->
+       <div class="animated-button"><span class="icon-trophy"><i class="fa fa-trophy"></i></span><button type="submit" class="next-button events" style="font-weight: 100; font-size:25px;    line-height: 75px"><i class="fa fa-arrow-up"></i></button></div>
+    </div>
+    <!--<div class="input-section password-section folded">
+      <input class="password" type="password" placeholder="ENTER YOUR PASSWORD HERE"/>
+      <div class="animated-button"><span class="icon-lock"><i class="fa fa-lock"></i></span><span class="next-button password"><i class="fa fa-arrow-up"></i></span></div>
+    </div>
+    <div class="input-section repeat-password-section folded">
+      <input class="repeat-password" type="password" placeholder="REPEAT YOUR PASSWORD HERE"/>
+      <div class="animated-button"><span class="icon-repeat-lock"><i class="fa fa-lock"></i></span><span class="next-button repeat-password"><i class="fa fa-paper-plane"></i></span></div>
+    </div>-->
+    <div class="success"> 
+      <p>REGISTRATION SUCCESSFUL</p>
+    </div>
+  </form>
+</div>
+<!--Code for form ends-->
+<div class="designer">
+Designed by - <a href="http://www.prefedge.com">Aryan Agarwal</a> & <a href="http://sharanry.github.io">Sharan RY</a>.
+</div>
+<!--Code for fire begins-->
+  <div class="col-md-12">
+    <div class="fire"></div>
+  </div> 
+<!--Code for fire ends-->
+<script src="/static/reg/js/index.js"></script>
+</body>
+</html>
