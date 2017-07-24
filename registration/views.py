@@ -45,9 +45,10 @@ class reg(View):
 			
 			try:
 				obj.save()
+				template = "registration/wavesRegSuccess.html"
 			except:
-				template = "registration/wavesreg.html"	
+				template = "registration/wavesRegFailed.html"	
 			
-			# template = "csr/intro.html"
+			# template = "registration/wavesRegSuccess.html"
 
 		return render(request, template, context)

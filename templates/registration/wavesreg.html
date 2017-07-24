@@ -1,56 +1,8 @@
+{% extends "registration/wavesRegBase.html" %}
 
-<!DOCTYPE HTML>
-<html>
-<head>
-<title>WAVES'17 | Registration</title>
-<link href="/static/reg/css/style.css" rel="stylesheet" type="text/css" media="all" />
-
-<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-<script type="text/javascript" src="/static/reg/js/jquery-1.6.2.min.js"></script>
-<script type="text/javascript" src="/static/reg/js/fire-0.62.min.js"></script>
-<script type="text/javascript" src="/static/reg/js/snow.js"></script>
-
-    <script>
-    <!--
-	$(document).ready( function(){
-		$('.fire').fire({
-			speed:20,
-			maxPow:9,
-			gravity:0,
-			flameWidth:3,
-			flameHeight:0,
-			plasm:true,
-			fireTransparency:0,
-			fadingFlameSpeed:8,
-			mouseEffect:true
-		});	
-	});
-    -->
-    </script>
-</head>
-<body>
-<div class="snow1 col-md-12">
-    <canvas id="canvas" style=""></canvas>
-</div>
-<div class="hehe">
-<a href="http://www.bits-waves.org">
-<div class="logo1">
-<img src="/static/reg/logo/logo.png" style="">
-</div>
-</a>
-<div class="wrap">
-<!-- contact-form -->	
-<div class="contact-form" id="dialog">
-	<div class="logo">
-		<h1>Register For Waves 2017</h1>
-	</div>	
+{% block content %}
 	
-	<div class="clear"></div>
-	<!-- form -->
-	<form class="contact_form" action="#" method="POST" name="contact_form">
+    <form class="contact_form" action="#" method="POST" name="contact_form">
         {% csrf_token %}
         <ul>
             <li>
@@ -61,7 +13,7 @@
             <li>
                 <!-- <input type="email" class="textbox1" name="email" placeholder="Enter Your Email" required /> -->
                 {{ form.email }}
-                <span class="form_hint">Enter a valid email</span>
+                <!-- <span class="form_hint">Enter a valid email</span> -->
                  <label><img src="/static/reg/images/message.png" alt=""></label>
             </li>
              <li>
@@ -81,12 +33,5 @@
             </li>
         </ul>
             <input type="submit" value="submit" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'submit';}">
-				
-		<div class="clear"></div>	
-</form>
-</div>
-</div>
-</div>
-<div class="fire"></div>
-</body>
-</html>
+        
+{% endblock content %}
