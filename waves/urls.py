@@ -30,13 +30,13 @@ from django.conf.urls.static import static
 
 
 urlpatterns = [
-    url(r'^admin', admin.site.urls),
-    url(r'^spinoff/reg', spinoffreg.as_view(), name='spinoffreg'),
-    url(r'^smtf/reg', smtfreg.as_view(), name='smtfreg'),
-    url(r'^inverse/reg', inversereg.as_view(), name='inversereg'),
-    url(r'^reg', reg.as_view(), name='reg'),
-    url(r'^socialcause/reg', csrreg.as_view(), name='csrreg'),
-    url(r'^socialcause', csr.as_view(), name='csr'),
-    url(r'^', home.as_view(), name='home'),
+    url(r'^admin/', admin.site.urls),
+    url(r'^spinoff/reg/$', spinoffreg.as_view(), name='spinoffreg'),
+    url(r'^smtf/reg/$', smtfreg.as_view(), name='smtfreg'),
+    url(r'^inverse/reg/$', inversereg.as_view(), name='inversereg'),
+    url(r'^reg/$', reg.as_view(), name='reg'),
+    url(r'^socialcause/reg/$', csrreg.as_view(), name='csrreg'),
+    url(r'^socialcause/$', csr.as_view(), name='csr'),
+    url(r'^$', home.as_view(), name='home'),
     
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
