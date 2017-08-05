@@ -5,7 +5,7 @@ window.onload = function(){
 	
 	//canvas dimensions
 	var W = window.innerWidth;
-	var H = window.innerHeight/2;
+	var H = window.innerHeight;
 	canvas.width = W;
 	canvas.height = H;
 	
