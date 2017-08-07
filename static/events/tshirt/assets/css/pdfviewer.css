@@ -55,8 +55,9 @@ set-box-shadow-cicis-menu-to-go {
 */
 
 #Iframe-Cicis-Menu-To-Go {
-/*  max-width: 666.67px;
-*/  max-height: 600px;
+  max-width: 666.67px;
+  
+  max-height: 600px;
   overflow: hidden;
 }
 /*
