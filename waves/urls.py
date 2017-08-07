@@ -22,7 +22,7 @@ from poetryslam.views import inversereg
 from home.views import home
 from csr.views import csr, csrreg
 from registration.views import reg
-
+from events import views as EventViews
 # for static
 from django.conf import settings
 from django.conf.urls.static import static
@@ -37,6 +37,7 @@ urlpatterns = [
     url(r'^reg/$', reg.as_view(), name='reg'),
     url(r'^socialcause/reg/$', csrreg.as_view(), name='csrreg'),
     url(r'^socialcause/$', csr.as_view(), name='csr'),
+    url(r'^tshirt/$', EventViews.tshirt.as_view(), name='tshirt'),
     url(r'^$', home.as_view(), name='home'),
     
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
