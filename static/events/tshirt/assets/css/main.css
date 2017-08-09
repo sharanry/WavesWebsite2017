@@ -1,4 +1,4 @@
-@import url("font-awesome.min.css");
+@import url("/static/events/tshirt/assets/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,900");
 
 /*
@@ -1783,7 +1783,7 @@
 	}
 
 		.image:before {
-			background: url("images/overlay.png");
+			background: url("/static/events/tshirt/assets/css/images/overlay.png");
 			content: '';
 			height: 100%;
 			left: 0;
@@ -2106,8 +2106,8 @@
 		}
 
 		.wrapper.style2 {
-			background-color: #83d3c9;
-			background-image: url("images/light-bl.svg"), url("images/light-br.svg");
+			background-color: #e0c0b1;
+			background-image: url("/static/events/tshirt/assets/css/images/light-bl.svg"),url("/static/events/tshirt/assets/css/images/light-br.svg");
 			background-position: bottom left, bottom right;
 			background-repeat: no-repeat, no-repeat;
 			background-size: 25em, 25em;
@@ -2395,7 +2395,7 @@
 	#banner {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #645862;
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
+		background-image: url("/static/events/tshirt/assets/css/images/light-bl.svg"), url("/static/events/tshirt/assets/css/images/light-br.svg"), url("/static/events/tshirt/assets/css/images/overlay.png"), url("/static/events/tshirt/assets/css/../../images/banner.jpg");
 		background-position: bottom left, bottom right, top left, top center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		background-size: 25em, 25em, auto, cover;
@@ -2461,7 +2461,7 @@
 /* Main */
 
 	#main {
-		background-image: url("images/dark-tl.svg"), url("images/dark-tr.svg"), url("images/dark-bl.svg"), url("images/dark-br.svg");
+		background-image: url("/static/events/tshirt/assets/css/images/dark-tl.svg"), url("/static/events/tshirt/assets/css/images/dark-tr.svg"), url("/static/events/tshirt/assets/css/images/dark-bl.svg"), url("/static/events/tshirt/assets/css/images/dark-br.svg");
 		background-position: top left, top right, bottom left, bottom right;
 		background-repeat: no-repeat;
 		background-size: 25em;
@@ -2493,7 +2493,7 @@
 	#cta {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #645862;
-		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
+		background-image: url("/static/events/tshirt/assets/css/images/light-tl.svg"), url("/static/events/tshirt/assets/css/images/light-tr.svg"), url("/static/events/tshirt/assets/css/images/overlay.png"), url("/static/events/tshirt/assets/css/../../images/banner.jpg");
 		background-position: top left, top right, top left, bottom center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		background-size: 25em, 25em, auto, cover;
