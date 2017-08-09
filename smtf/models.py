@@ -8,6 +8,7 @@ class DateTime(models.Model):
 class SmtfParticipant(models.Model):
 	# Blore mumbai pune delhi vizag ahmedabad Chennai Hyderabad
 	CITIES = 	[	
+					("Goa","Goa"),
 					("Bangalore","Bangalore"),
 		 			("Mumbai","Mumbai"),
 		  			("Pune","Pune"),

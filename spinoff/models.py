@@ -9,6 +9,7 @@ class DateTime(models.Model):
 
 class SpinoffParticipant(models.Model):
 	CITIES = 	[	
+					("Goa","Goa"),
 					("Bangalore","Bangalore"),
 		 			("Pune","Pune"),
 		  			("Mumbai","Mumbai"),

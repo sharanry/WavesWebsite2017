@@ -8,6 +8,7 @@ class DateTime(models.Model):
 class InverseParticipant(models.Model):
 	# Blore pune mumbai
 	CITIES = 	[	
+					("Goa","Goa"),
 					("Bangalore","Bangalore"),
 		 			("Pune","Pune"),
 		  			("Mumbai","Mumbai"),
