@@ -13,3 +13,10 @@ class tshirt(View):
 
 		
 	# 	return render(request, template, context)
+
+
+class moot(View):
+	def get (self, request, *args, **kwargs):
+		context ={}
+
+		return render(request, "events/moot.html", context)
