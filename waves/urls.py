@@ -40,6 +40,8 @@ urlpatterns = [
     url(r'^socialcause/$', csr.as_view(), name='csr'),
     url(r'^tshirt/$', EventViews.tshirt.as_view(), name='tshirt'),
     url(r'^lexomniamoot/$', EventViews.moot.as_view(), name='moot'),
+    url(r'^caricreatures/$', EventViews.caricreatures.as_view(), name='caricreatures'),
+    url(r'^doodle/$', EventViews.doodle.as_view(), name='doodle'),
     url(r'^$', home.as_view(), name='home'),
     
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

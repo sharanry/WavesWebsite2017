@@ -9,14 +9,22 @@ class tshirt(View):
 
 		return render(request, "events/tshirt.html", context)
 
-	# def post(self, request, *args, **kwargs):
-
-		
-	# 	return render(request, template, context)
-
 
 class moot(View):
 	def get (self, request, *args, **kwargs):
 		context ={}
 
 		return render(request, "events/moot.html", context)
+
+class caricreatures(View):
+	def get (self, request, *args, **kwargs):
+		context ={}
+
+		return render(request, "events/caricreatures.html", context)
+
+
+class doodle(View):
+	def get (self, request, *args, **kwargs):
+		context ={}
+
+		return render(request, "events/doodle.html", context)
