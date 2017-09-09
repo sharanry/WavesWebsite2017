@@ -28,3 +28,15 @@ class doodle(View):
 		context ={}
 
 		return render(request, "events/doodle.html", context)
+
+class ohSnap(View):
+	def get (self, request, *args, **kwargs):
+		context ={}
+
+		return render(request, "events/oh_snap.html", context)
+
+class short(View):
+	def get (self, request, *args, **kwargs):
+		context ={}
+
+		return render(request, "events/short.html", context)	
