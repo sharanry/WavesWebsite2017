@@ -115,6 +115,9 @@
                 <p>{{ intro }}</p>
                 <p>{{ intro2 }}</p>
                 <p>{{ intro3 | linebreaks }}</p>
+                {% if event == 'SpinOff' %}
+                  <a target="_blank" href="">Rulebook</a>
+                {% endif %}
                 {% if event == 'inVerse' %}
                     <h2>Rules</h2>
                     <ol>
