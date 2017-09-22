@@ -44,6 +44,8 @@ urlpatterns = [
     url(r'^doodle/$', EventViews.doodle.as_view(), name='doodle'),
     url(r'^ohsnap/$', EventViews.ohSnap.as_view(), name='ohSnap'),
     url(r'^short/$', EventViews.short.as_view(), name='short'),
+    url(r'^irshad/$', EventViews.irshad.as_view(), name='irshad'),
+    url(r'^carpedictum/$', EventViews.carpedictum.as_view(), name='carpedictum'),
     url(r'^$', home.as_view(), name='home'),
     
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -40,3 +40,15 @@ class short(View):
 		context ={}
 
 		return render(request, "events/short.html", context)	
+
+class irshad(View):
+	def get (self, request, *args, **kwargs):
+		context ={}
+
+		return render(request, "events/irshad.html", context)		
+
+class carpedictum(View):
+	def get (self, request, *args, **kwargs):
+		context ={}
+
+		return render(request, "events/carpedictum.html", context)			
