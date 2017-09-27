@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Waves 2017| Events</title>
+  <meta charset="utf-8">
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="/static/main/css/main.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet"> 
+   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    
+    body{
+       background: #f09046  ; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient( #7d4376,#f09046); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #7d4376,#f09046); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #7d4376,#f09046); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #7d4376,#f09046); /* Standard syntax */
+    }
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    /* Blur */
+.hover07 figure img {
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.hover07 figure:hover img {
+  -webkit-filter: blur(0);
+  filter: blur(0);
+}
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+  #modal-img{
+    height: 100%; width: 100%; z-index: 20; float: left; position: relative;
+  }
+  .modal-text{
+    float: right; background: rgba(0, 0, 0, 0.85) /* Green background with 30% opacity */; z-index: 21; position: absolute; right: 2.5%; width: 50%; height: 97%
+  }
+  .modal-body{
+    height: 860px;
+  }
+  #head2{
+    margin-top: 7%; font-family: 'Josefin Slab', serif; font-size: 60px;
+  }
+  h3, h2{
+    margin:0;
+  }
+  #modal-heading{
+     margin-top: 7%; font-family: 'Josefin Slab', serif; font-size: 60px;
+  }
+
+.animate
+{
+  transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+}
+
+.action-button
+{
+  position: relative;
+  padding: 10px 40px;
+  margin: 0px 10px 10px 0px;
+  
+  border-radius: 10px;
+  font-family: 'Pacifico', cursive;
+  font-size: 25px;
+  color: #FFF;
+  text-decoration: none;  
+}
+
+.blue
+{
+  background-color: #3498DB;
+  border-bottom: 5px solid #2980B9;
+  text-shadow: 0px -2px #2980B9;
+}
+
+.red
+{
+  background-color: #E74C3C;
+  border-bottom: 5px solid #BD3E31;
+  text-shadow: 0px -2px #BD3E31;
+}
+
+.green
+{
+  background-color: #82BF56;
+  border-bottom: 5px solid #669644;
+  text-shadow: 0px -2px #669644;
+}
+
+.yellow
+{
+  background-color: #F2CF66;
+  border-bottom: 5px solid #D1B358;
+  text-shadow: 0px -2px #D1B358;
+}
+
+.action-button:active
+{
+  transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+  border-bottom: 1px solid;
+}
+.even{
+  padding: 0;
+  margin:0;
+}
+.modal-text{
+    text-align:justify; padding: 20px;
+  }
+
+   @media (max-width: 800px) {
+     #modal-img{
+    height: 30%; width: 100%; z-index: 20; float: left; position: relative;
+  }
+  #head2{
+    margin-top: 20%;
+  }
+  .modal-text{
+    float: none; z-index: 19; position: relative; right: 0; width: 100%; height: 97%
+  }
+  .modal-body{
+   height: 100%;
+  }
+   }
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+
+  </style>
+</head>
+<body>
+
+<div class="nav-bar" style="z-index: 100000; font-family: 'Pacifico', cursive;">
+<ul class="lg_menu" id="right_menu">
+<li class="lg_item"> <a href="/reg"> Register</a></li>
+<li class="lg_item"><a href="/socialcause">Social Cause</a></li>
+<li class="lg_item"><a href="/events">Events</a></li>
+</ul>
+ <div class="container" id="mob_icon" onclick="myFunction(this)" style="position: absolute;">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div> 
+<a href="/"><img id="logo" src="/static/main/images/logo.png" style="z-index:111111 " /></a>
+<ul class="lg_menu" id="left_menu">
+<li class="lg_item"><a href="/sponsors">Sponsors</a></li>
+<li class="lg_item"><a href="/our_team">Our Team</a></li>
+<li class="lg_item"><a href="/contact_us">Contact Us</a></li>
+</ul>
+<div id="myMenu" style="position: relative; width: 100%; text-align:left; height: 800px;background-color: rgba(0,0,0,0.35);  z-index: 100000 ">
+<ul class="mob_menu_item" >
+<a href="/reg"><li class="mob_lg_item">  Register</li></a>
+<a href="/socialcause"><li class="mob_lg_item">Social Cause</li></a>
+<a href="/events"><li class="mob_lg_item">Events</li></a>
+<a href="/sponsors"><li class="mob_lg_item">Sponsors</li></a>
+<a href="/our_team"><li class="mob_lg_item">Our Team</li></a>
+<a href="/contact_us"><li class="mob_lg_item">Contact Us</li></a>
+</ul>
+</div>
+</div>
+<div class="back_box" style=""></div>
+<!-- Nav Bar ends Here -->
+<div class="container text-center" style="width: 100%;"">    
+  <h3 id="head2" style="">Specials</h3><br>
+  <!-- Row  1-->
+  <div class="row">
+    <div class="col-sm-4 col-lg-6 even" style="" style="width: 350px; height: 180px; text-align: center;">
+     <div class="hover07 column">
+  <div data-toggle="modal" data-target="#myModal" >
+    <figure><img src="/static/main/images1/events/Contention.JPG" style="width: 100%; height: 280px;position: relative;" /></figure> <span style="position: absolute; left: 0; top: 40%;  width: 100%; font-size: 35px;">Contention</span>
+    
+    <!-- 350x180 -->
+  </div>
+    </div>
+    </div>
+  <div class="col-sm-3 even" style="" style="width: 350px; height: 180px; text-align: center;">
+     <div class="hover07 column">
+  <div data-toggle="modal" data-target="#myModal1" >
+    <figure><img src="/static/main/images1/events/fashp.jpg" style="width: 100%;height: 280px ;position: relative;" /></figure>
+    <span style="position: absolute; left: 0; top: 40%;  width: 100%; font-size: 35px;">Fash P</span>
+    
+    <!-- 350x180 -->
+  </div>
+    </div>
+    </div>
+    <div class="col-sm-3 even" style="" style="width: 350px; height: 180px; text-align: center;">
+     <div class="hover07 column">
+  <div data-toggle="modal" data-target="#myModal2" >
+    <figure><img src="/static/main/images1/events/moot.JPG" style="width: 100%;height: 280px; position: relative;" /></figure>
+    <span style="position: absolute; left: 0; top: 40%;  width: 100%; font-size: 35px;">LEX Omnia - Moot Court</span>
+  
+    <!-- 350x180 -->
+  </div>
+    </div>
+    </div>
+    </div>
+    <!-- Next Row-->
+  <div class="row">
+    <div class="col-sm-4 col-lg-3 even" style="" style="width: 350px; height: 180px; text-align: center;">
+     <div class="hover07 column">
+  <div data-toggle="modal" data-target="#myModal3" >
+    <figure><img src="/static/main/images1/events/mr_waves.jpg" style="width: 100%; height: 280px;position: relative;" /></figure>
+    <span style="position: absolute; left: 0; top: 40%;  width: 100%; font-size: 35px;">Mr. & Ms. Waves</span>
+    
+    <!-- 350x180 -->
+  </div>
+    </div>
+    </div>
+  <div class="col-sm-3 col-lg-5 even" style="" style="width: 350px; height: 180px; text-align: center;">
+     <div class="hover07 column">
+  <div data-toggle="modal" data-target="#myModal4" >
+    <figure><img src="/static/main/images1/events/spinoff.JPG" style="width: 100%;height: 280px ;position: relative;" /></figure>
+    <span style="position: absolute; left: 0; top: 40%;  width: 100%; font-size: 35px;">Spinoff</span>
+    
+    <!-- 350x180 -->
+  </div>
+    </div>
+    </div>
+    <div class="col-sm-3 col-lg-4 even" style="" style="width: 350px; height: 180px; text-align: center;">
+     <div class="hover07 column">
+  <div data-toggle="modal" data-target="#myModal5" >
+    <figure><img src="/static/main/images1/events/smtf.JPG" style="width: 100%;height: 280px; position: relative;" /></figure>
+    <span style="position: absolute; left: 0; top: 40%;  width: 100%; font-size: 35px;">Show Me the Funny</span>
+    
+    <!-- 350x180 -->
+  </div>
+    </div>
+    </div>
+    </div>
+    <!-- row end -->
+    
+    <!-- Next Row-->
+  <div class="row">
+    <div class="col-sm-4 col-lg-5 even" style="" style="width: 350px; height: 180px; text-align: center;">
+     <div class="hover07 column">
+  <div data-toggle="modal" data-target="#myModal6" >
+    <figure><img src="/static/main/images1/events/sf.JPG" style="width: 100%; height: 280px;position: relative;" /></figure>
+    <span style="position: absolute; left: 0; top: 40%;  width: 100%; font-size: 35px;">Strangely Familiar</span>
+    
+    <!-- 350x180 -->
+  </div>
+    </div>
+    </div>
+  <div class="col-sm-3 col-lg-4 even" style="" style="width: 350px; height: 180px; text-align: center;">
+     <div class="hover07 column">
+  <div data-toggle="modal" data-target="#myModal7" >
+    <figure><img src="/static/main/images1/events/irshad.JPG" style="width: 100%;height: 280px ;position: relative;" /></figure>
+    <span style="position: absolute; left: 0; top: 40%;  width: 100%; font-size: 35px;">Irshad</span>
+    
+    <!-- 350x180 -->
+  </div>
+    </div>
+    </div>
+    <div class="col-sm-3 col-lg-3 even" style="" style="width: 350px; height: 180px; text-align: center;">
+     <div class="hover07 column">
+  <div data-toggle="modal" data-target="#myModal8" >
+    <figure><img src="/static/main/images1/events/searock.JPG" style="width: 100%;height: 280px; position: relative;" /></figure>
+    <span style="position: absolute; left: 0; top: 40%;  width: 100%; font-size: 35px;">Searock</span>
+    
+    <!-- 350x180 -->
+  </div>
+    </div>
+    </div>
+    </div>
+    <!-- row end -->
+
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog" style="z-index: 233330">
+  <div class="modal-dialog modal-lg" style="margin-top: 20px; width: 95%;">
+
+    <!-- Modal content-->
+    <div class="modal-content" style="background: black; color: white;">
+      <div class="modal-header">
+        <button type="button" class="close" style="color: #fff;" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body" style="">
+      <img id="modal-img" src="/static/main/images1/events/Contention.JPG" style="">
+      <div class="modal-text " style="text-align:justify; padding: 20px; ">
+       <h2 id="modal-heading">Contention</h2><br><br>
+       <p>This event is a debate in the British parliamentary format. This implies that
+4 teams of 2 speakers each contend a motion. The participants are given
+15 minutes to prepare and 7 minutes each to deliver their cases. The
+motions range in scope from feminism to economics to international
+relations. At the end of each round the teams are ranked by external
+adjudicators. The best 16 teams from multiple preliminary rounds break
+into the knockout stages.</p>
+       <br>
+       <h2>Rules</h2>
+       The Debate will follow the British Parliamentary format.<br>
+- Each team will consist of two participants<br>
+- The debate follows the n-1 rule where every n teams belonging to
+an institutional contingent must accompanied by n-1 adjudicators<br>
+- The tournament will run on all three days of the festival<br>
+- The adjudication test will be held on day 0 of the tournament. The
+format of the adjudication test will be decided by the adjudication
+core of the tournament<br>
+- Institutional cross teams are allowed.<br>
+- Independent adjudicators are welcome to participate. However, one
+must have attended an educational institution sometime in the past
+6 months<br>
+- Subsidies will be provided to selected adjudicators. This judge
+subsidy willdepend on previous debating and adjudication
+experience**<br>
+- There is an overall team cap of 52 teams. The first 52 teams to
+register for the tournament will be given the first preference, while
+the following teams will be put up in a wait list
+       <br><br><br>
+       <div class="btn_links" style="width: 100%;">
+       <a class="action-button shadow animate blue" href="#" style="padding: 15px;">Register</a>
+      
+        </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!-- modal end -->
+<!-- Modal -->
+<div id="myModal1" class="modal fade" role="dialog" style="z-index: 233330">
+  <div class="modal-dialog modal-lg" style="margin-top: 20px; width: 95%;">
+
+    <!-- Modal content-->
+    <div class="modal-content" style="background: black; color: white;">
+      <div class="modal-header">
+        <button type="button" class="close" style="color: #fff;" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body" style="">
+      <img id="modal-img" src="/static/main/images1/events/fashp.jpg" style="">
+      <div class="modal-text" style="">
+       <h2 id="modal-heading">Fash P</h2><br><br>
+       <p>“Fire up the ramp with your style and confidence in this battle of
+beauty and style</p>
+       <br>
+       <h3>Rules</h3>
+      Background tracks are a must for each performance.<br>
+- Any deviation from a fashion related choreography will lead to
+deduction in score.<br>
+- The backstage crew must not exceed 5 people and the crew
+members should be declared before the eliminations starts.<br>
+- Use of water, fire or any kind of fireworks(party poppers
+included) will lead to immediate disqualification.<br>
+- Points will be deducted for any form vulgarity or dance
+movements in the act.
+       <br><br><br>
+       <div class="btn_links" style="width: 100%;">
+       <a class="action-button shadow animate blue" href="#" style="padding: 15px;">Register</a>
+      
+        </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!-- modal end -->
+<!-- Modal -->
+<div id="myModal2" class="modal fade" role="dialog" style="z-index: 233330">
+  <div class="modal-dialog modal-lg" style="margin-top: 20px; width: 95%;">
+
+    <!-- Modal content-->
+    <div class="modal-content" style="background: black; color: white;">
+      <div class="modal-header">
+        <button type="button" class="close" style="color: #fff;" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body" style="text-align:justify; padding: 20px;">
+      <img id="modal-img" src="/static/main/images1/events/moot.JPG" style="">
+      <div class="modal-text" style="">
+       <h2 id="modal-heading">Lex Omnia - Moot Court</h2><br><br>
+       <p>Waves conducts its own Moot Court Competition called Lex Omnia where
+students from Law Colleges take part in a competition of simulated court
+proceedings</p>
+       <br>
+       <h3>Rules</h3>
+      Participating teams should consist of two mooters and two
+researchers.<br>
+- Participants must be regular bonafide students of their institution
+and enrolled in either undergraduate 5-year integrated L.L.B or 3-
+year Degree Law Programmes.<br>
+- Invitation for the competition shall be subject to a maximum
+participation of 36 teams on an elimination based on the memorials.<br>
+- The event will consist of Preliminary Rounds, Quarter Finals, Semi
+Finals and the Final.<br>
+- Each team shall compulsorily present oral arguments for both sides<br>
+– claimant and respondent in the preliminary rounds.<br>
+- The top 8 teams from the oral rounds will be selected for the
+quarter finals provided the team has won both preliminary rounds.<br>
+- The quarter finals and the semi finals will be knockout rounds.
+       <br><br><br>
+       <div class="btn_links" style="width: 100%;">
+       <a class="action-button shadow animate blue" href="#" style="padding: 15px;">Register</a>
+       <a class="action-button shadow animate red" href="#" width="50%" style="padding: 15px;">Know More</a>
+        </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!-- modal end -->
+<!-- Modal -->
+<div id="myModal3" class="modal fade" role="dialog" style="z-index: 233330">
+  <div class="modal-dialog modal-lg" style="margin-top: 20px; width: 95%;">
+
+    <!-- Modal content-->
+    <div class="modal-content" style="background: black; color: white;">
+      <div class="modal-header">
+        <button type="button" class="close" style="color: #fff;" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body" style="text-align:justify; padding: 20px;">
+      <img id="modal-img" src="/static/main/images1/events/mr_waves.jpg" style="">
+      <div class="modal-text" style="">
+       <h2 id="modal-heading">Mr. and Ms. Waves</h2><br><br>
+       <p>Can your glamour leave the audiences awestruck?
+Do you have it in you to make it through without batting an eye?</p>
+       <br>
+       <h3>Rules</h3><br>
+       Candidates can register either on day 1 of the fest or online.<br>
+• No registrations will be allowed past the deadline.<br>
+• The deadline for the registrations will be announced at a later stage.<br>
+• The event will be conducted in multiple rounds.<br>
+• There will be 4 on-fest rounds spanning over the 3 days of the festival.<br>
+• Candidates will be eliminated at the end of each round, based upon the
+points they scored in the previous rounds.<br>
+• The on-fest rounds will try and evaluate the participant's personality,
+talent, appeal, wit, humor and presence of mind during various rounds.
+       <br><br><br>
+       <div class="btn_links" style="width: 100%;">
+       <a class="action-button shadow animate blue" href="#" style="padding: 15px;">Register</a>
+     
+        </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!-- modal end -->
+<!-- Modal -->
+<div id="myModal4" class="modal fade" role="dialog" style="z-index: 233330">
+  <div class="modal-dialog modal-lg" style="margin-top: 20px; width: 95%;">
+
+    <!-- Modal content-->
+    <div class="modal-content" style="background: black; color: white;">
+      <div class="modal-header">
+        <button type="button" class="close" style="color: #fff;" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body" style="">
+      <img id="modal-img" src="/static/main/images1/events/spinoff.JPG" style="">
+      <div class="modal-text" style="text-align:justify; padding: 20px;">
+       <h2 id="modal-heading">Spin Off</h2><br><br>
+       <p>Spin-off is a DJing Event which primarily focuses on bringing upcoming Djs
+of the nation together to compete and showcase their skills on one of the
+best platforms in the Country judged by the Gurus of the cultures
+themselves. The festive Goan Atmosphere and an audience from all across
+the nation is bound to create an intoxicating and ecstatic “never has been
+before” experience that a DJ could ask for. The Winner of the event Gets a
+once in a lifetime chance to perform on the Iconic EDM Night of Waves.</p>
+       <br>
+       <h3>Rules</h3>
+      -Each Contestant will be given 10 minutes to mix his/her tracks on
+stage. Pre Mixed tracks will not be considered and may result in
+disqualification of the contestant.<br>
+- The Participants are allowed to use their own Headphones if required
+and allowed by the Honourable Judges.<br>
+- Contestants may not use any external aid once his/her time begins on
+stage.<br>
+- Winners shall qualify to participate in the finals during Waves 2017 at
+Goa.<br>
+- Failure to abide by the Judges, Organising Committee and the rules set
+forth will result in immediate disqualification from the event.
+       <br><br><br>
+       <div class="btn_links" style="width: 100%;">
+       <a class="action-button shadow animate blue" href="#" style="padding: 15px;">Register</a>
+     
+        </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!-- modal end -->
+<!-- Modal -->
+<div id="myModal5" class="modal fade" role="dialog" style="z-index: 233330">
+  <div class="modal-dialog modal-lg" style="margin-top: 20px; width: 95%;">
+
+    <!-- Modal content-->
+    <div class="modal-content" style="background: black; color: white;">
+      <div class="modal-header">
+        <button type="button" class="close" style="color: #fff;" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body" style="">
+      <img id="modal-img" src="/static/main/images1/events/smtf.JPG" style="">
+      <div class="modal-text" style="text-align:justify; padding: 20px;">
+       <h2 id="modal-heading">Show Me The Funny</h2><br><br>
+       <p>Show Me The Funny is a stand up comedy competition .The eliminations shall
+be held in the respective cities where participants shall perform a stand up
+comedy act in the allotted time . Two finalists shall be selected from each
+city to perform at the finals(the number is subject to change) .18 finalists shall
+perform in a venue with an audience of about 300. The winner shall open for
+the waves comedy night and win prize money of an amount that shall be
+disclosed at a later stage</p>
+       <br>
+       <h3>Rules</h3>
+     - The participants must strictly adhere to the allotted time(3-4 mins per
+person) , exceeding time limit may result in decrease of points.<br>
+- Excessive use of vulgar language may result in decrease of points.<br>
+- Plagiarised content shall result in disqualification.<br>
+- Comedians must perform their act in Hindi or English only.<br>
+- The judge’s decision shall be final in all cases.<br>
+       <br><br><br>
+       <div class="btn_links" style="width: 100%;">
+       <a class="action-button shadow animate blue" href="#" style="padding: 15px;">Register</a>
+      
+        </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!-- modal end -->
+<!-- Modal -->
+<div id="myModal6" class="modal fade" role="dialog" style="z-index: 233330">
+  <div class="modal-dialog modal-lg" style="margin-top: 20px; width: 95%;">
+
+    <!-- Modal content-->
+    <div class="modal-content" style="background: black; color: white;">
+      <div class="modal-header">
+        <button type="button" class="close" style="color: #fff;" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body" style="">
+      <img id="modal-img" src="/static/main/images1/events/sf.JPG" style="">
+      <div class="modal-text" style="text-align:justify; padding: 20px;">
+       <h2 id="modal-heading">Strangely Familiar</h2><br><br>
+       <p>“ Find your BITSIAN pair”</p>
+       <br>
+       <h3>Rules</h3>
+      -Round 1:<br>
+Screen test (pen paper)<br>
+General questions will be asked and you'll have to fill your
+answer and your partners answer. This round will check how
+well you know your partner. Based on most matched
+answers, Points will be allotted for each team.<br>
+-Round 2:<br>
+Task round:<br>
+Various team tasks will be given to check coordination and
+team work of the pair. The teams will be judged based on
+their speed of completion of tasks.
+Top 5 teams go to finals<br>
+-Final round<br>
+Different rounds will be held with pair vs pair focusing on
+how well the team works in front of a crowd. Eliminations
+take place until 3 teams are left who compete for the title.
+Each team is scored according to their performance.
+       <br><br><br>
+       <div class="btn_links" style="width: 100%;">
+       <a class="action-button shadow animate blue" href="#" style="padding: 15px;">Register</a>
+ 
+        </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!-- modal end -->
+<!-- Modal -->
+<div id="myModal7" class="modal fade" role="dialog" style="z-index: 233330">
+  <div class="modal-dialog modal-lg" style="margin-top: 20px; width: 95%;">
+
+    <!-- Modal content-->
+    <div class="modal-content" style="background: black; color: white;">
+      <div class="modal-header">
+        <button type="button" class="close" style="color: #fff;" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body" style="">
+      <img id="modal-img" src="/static/main/images1/events/irshad.JPG" style="">
+      <div class="modal-text" style="text-align:justify; padding: 20px;">
+       <h2 id="modal-heading">Irshad</h2><br><br>
+       <p>Coming Soon</p>
+       <br>
+       <h3>Rules</h3>
+       Coming Soon
+       <br><br><br>
+       <div class="btn_links" style="width: 100%;">
+       <a class="action-button shadow animate blue" href="#" style="padding: 15px;">Register</a>
+    
+        </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!-- modal end -->
+<!-- Modal -->
+<div id="myModal8" class="modal fade" role="dialog" style="z-index: 233330">
+  <div class="modal-dialog modal-lg" style="margin-top: 20px; width: 95%;">
+
+    <!-- Modal content-->
+    <div class="modal-content" style="background: black; color: white;">
+      <div class="modal-header">
+        <button type="button" class="close" style="color: #fff;" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body" style="">
+      <img id="modal-img" src="/static/main/images1/events/searock.JPG" style="">
+      <div class="modal-text" style="text-align:justify; padding: 20px;">
+       <h2 id="modal-heading">Searock</h2><br><br>
+       <p>33About evnt goes here About evnt goes hereAbout evnt goes hereAbout evnt goes hereAbout evnt goes hereAbout evnt goes hereAbout evnt goes hereAbout evnt goes hereAbout evnt goes hereAbout evnt goes hereAbout evnt goes hereAbout evnt goes hereAbout evnt goes hereAbout evnt goes hereAbout evnt goes hereAbout evnt goes hereAbout evnt goes hereAbout evnt goes here</p>
+       <br>
+       <h3>Rules</h3>
+       <p>- Point1</p>
+       <p>- Point1</p>
+       <p>- Point1</p>
+       <p>- Point1</p>
+       <p>- Point1</p>
+       <p>- Point1</p>
+       <p>- Point1</p>
+       <br><br><br>
+       <div class="btn_links" style="width: 100%;">
+       <a class="action-button shadow animate blue" href="#" style="padding: 15px;">Register</a>
+       <a class="action-button shadow animate red" href="#" width="50%" style="padding: 15px;">Know More</a>
+        </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!-- modal end -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+  function myFunction(x) {
+    x.classList.toggle("change");
+} 
+</script>
+<script type="text/javascript">
+  $(function() {
+  var menuVisible = false;
+  $('#mob_icon').click(function() {
+    if (menuVisible) {
+      $('#myMenu').css({'display':'none'});
+     $('body').css({'background':'#A8D2DE'});
+     $('.back_box').css({'width':'100%'});
+      $('.back_box').css({'height':'10%'});
+      
+      menuVisible = false;
+      return;
+    }
+    $('#myMenu').css({'display':'block'});
+    $('body').css({'background':''});
+     $('.back_box').css({'width':'100%'});
+      $('.back_box').css({'height':'100%'});
+      
+    menuVisible = true;
+  });
+  
+});
+
+</script>
+</body>
+</html>
