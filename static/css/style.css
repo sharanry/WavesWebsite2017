@@ -6,11 +6,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 @font-face {
     font-family: 'Roboto-Regular';
-    src:url(../fonts/Roboto-Regular.ttf) format('truetype');
+    src:url(/static/main/fonts/Roboto-Regular.ttf) format('truetype');
 }
 @font-face {
     font-family: 'AllertaStencil-Regular';
-    src:url(../fonts/AllertaStencil-Regular.ttf) format('truetype');
+    src:url(/static/main/fonts/AllertaStencil-Regular.ttf) format('truetype');
 }
 html, body{
     font-size: 100%;

@@ -33,3 +33,9 @@ class events(View):
 	def get (self, request, *args, **kwargs):
 		context={}
 		return render(request, "events.html", context)
+		underconstruction
+
+class underconstruction(View):
+	def get (self, request, *args, **kwargs):
+		context={}
+		return render(request, "under_construction.html", context)		

@@ -16,13 +16,13 @@ class reg(View):
 			"url_home": "/",
 			
 		}
-		return render(request, "registration/wavesreg.html", context)
+		return render(request, "registration/reg.html", context)
 
 	def post(self, request, *args, **kwargs):
 
 		form = register(request.POST)
 		
-		template = "registration/wavesreg.html"
+		template = "registration/reg.html"
 		context ={
 			"form": form,
 			"event": "Waves Registration",
@@ -45,9 +45,9 @@ class reg(View):
 			
 			try:
 				obj.save()
-				template = "registration/wavesRegSuccess.html"
+				template = "registration/success.html"
 			except:
-				template = "registration/wavesRegFailed.html"	
+				template = "registration/failure.html"	
 			
 			# template = "registration/wavesRegSuccess.html"
 

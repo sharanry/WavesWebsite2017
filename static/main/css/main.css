@@ -295,11 +295,11 @@ svg text {
 /*It ends all here*/
 @font-face {
     font-family: lovelo;
-    src: url("fonts/lovelo_black.otf") format("opentype");
+    src: url("/static/main/fonts/lovelo_black.otf") format("opentype");
 }
 @font-face {
     font-family: simplifica;
-    src: url("fonts/SIMPLIFICA.ttf") format("truetype");
+    src: url("/static/main/fonts/SIMPLIFICA.ttf") format("truetype");
 }
 
 @media(max-width:1440px){

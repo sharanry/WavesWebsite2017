@@ -28,13 +28,13 @@ body{
 }
 #Choco_left_arrow{
 	float:left;
-	background-image:url(../images/left-1.png)!important;
+	background-image:url(/static/main/images/left-1.png)!important;
 	background-position:12%;
 	left:-3%;
 }
 #Choco_right_arrow{
 	float:right;
-	background-image:url(../images/right-1.png)!important;
+	background-image:url(/static/main/images/right-1.png)!important;
 	background-position:88%;
 	left:3%;
 }
