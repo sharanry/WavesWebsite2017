@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+	<title>Waves 2017</title>
+
+	<link href="/static/main/css/fixed-positioning.css" rel="stylesheet" type="text/css" />
+	<link href="/static/main/css/main.css" rel="stylesheet" type="text/css" />
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="/static/main/css/splash.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet"> 
+	
+	<link href="https://fonts.googleapis.com/css?family=Eczar" rel="stylesheet"> 
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+
+	<!-- 	 -->
+<div class="nav-bar" style="z-index: 100000; font-family: 'Pacifico', cursive;">
+<ul class="lg_menu" id="right_menu">
+<li class="lg_item"> <a href="/reg"> Register</a></li>
+<li class="lg_item"><a href="/socialcause">Social Cause</a></li>
+<li class="lg_item"><a href="/events">Events</a></li>
+</ul>
+ <div class="container" id="mob_icon" onclick="myFunction(this)" style="position: absolute;">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div> 
+<a href="#"><img id="logo" src="/static/main/images/logo.png" style="z-index:111111 " /></a>
+<ul class="lg_menu" id="left_menu">
+<li class="lg_item"><a href="/sponsors">Sponsors</a></li>
+<li class="lg_item"><a href="/our_team">Our Team</a></li>
+<li class="lg_item"><a href="/contact_us">Contact Us</a></li>
+</ul>
+<div id="myMenu" style="position: relative; width: 100%; text-align:left; height: 800px; background: background-color: rgba(0,0,0,0.35);  z-index: 100000 ">
+<ul class="mob_menu_item" >
+<a href="/reg"><li class="mob_lg_item">  Register</li>
+<a href="/socialcause"><li class="mob_lg_item">Social Cause</li></a>
+<a href="/events"><li class="mob_lg_item">Events</li></a>
+<a href="/sponsors"><li class="mob_lg_item">Sponsors</li></a>
+<a href="/our_team"><li class="mob_lg_item">Our Team</li></a>
+<a href="/contact_us"><li class="mob_lg_item">Contact Us</li></a>
+</ul>
+</div>
+</div>
+
+	
+<div class="back_box"></div>
+<!-- =======================================================
+Author: Aryan Agarwal
+Author URL: https://prefedge.com
+======================================================= -->
+</head>
+
+
+
+<body>
+
+<div class="main-sk">
+
+
+<!-- Main Website Starts Here -->
+<div class="back_main" style="width: 100%; height: 200%;  background: #f09046	; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient( #7d4376,#f09046); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #7d4376,#f09046); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #7d4376,#f09046); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #7d4376,#f09046); /* Standard syntax */" data-0="top:-100%;" data-2000="top:100%;">
+
+</div>
+<div class="back_main" style="width: 100%; height: 200%;  background: #7d4376	; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient( #413484,#7d4376); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #413484,#7d4376); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #413484,#7d4376); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #413484,#7d4376); /* Standard syntax */" data-0="top:-300%;" data-2000="top:-100%;" data-4000="top:100%">
+</div>
+<div class="back_main" style="width: 100%; height: 200%;  background: #413484	; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient( #0b0714,#413484); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #0b0714,#413484); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #0b0714,#413484); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #0b0714,#413484); /* Standard syntax */" data-0="top:-300%;" data-2000="top:-300%;" data-4000="top:-100%" data-6000="top:0;">
+    <img src="/static/main/images1/new/Stars.png" style="height: 50%; width: 100%; left: 0%; top: -0% ;position: absolute;">
+    <!-- <img src="/static/main/images1/new/Stars.png" style="height: 50%; width: 100%; left: 25%; top:-15%;position : absolute">	 -->
+</div>
+
+
+
+<div class="ground_new only_desk" data-0=" bottom:0%;" data-2000="bottom:-100%;" style="z-index: 102; width: 100%; height: 100%;">
+	    <img src="/static/main/images1/new/ground.png" style="width: 100%; height:100%; bottom: 0;">
+
+</div>
+<div class="ground_new only_mob" data-0=" bottom:0%;" data-2000="bottom:-100%;" style="z-index: 102; width: 120%; height: 70%;">
+	    <img src="/static/main/images1/new/ground.png" style="width: 100%; height:100%; bottom: 0;">
+
+</div>
+
+<div class="events_head_new" style="top: 13%; width: 100%; height: 20%; text-align: center; font-family: 'Pacifico', cursive; font-size: 40px; color: white;" data-0="display:none;" data-1500="display:block; left:100%;" data-1700="left:0%;" data-2150="left:0%;" data-2450="left:-100%;" >
+	About
+
+</div>
+<div class="only_desk">
+<div class="about12" style="background-color:  rgba(108, 91, 123, 0.4);" data-0="display:none;" data-1500="display:block; left:100%;" data-1700="left:15%;" data-2150="left:15%" data-2450="left:-100%;" style="" >
+<div class="about_writeup" style="padding-left:20px;padding-right:20px;padding-top:60px; font-family:'Open Sans', sans-serif; font-size:25px ; ">
+"Where there is light,
+There is shadow."<br><br><br>
+
+Demons cannot prosper without the goodness of angels and there is no Yin without Yang. After surfing the tides of time last year, Waves 2017 brings you a chance to explore the dark side. Join us from the 27th of October as we lose ourselves to the feeling of devilish and godly euphoria, painting ourselves with a mixture of exultation and excitement, unlike the kind you have ever seen in your life.<br>
+This year, Waves goes bigger, better and brighter as we aim to take you on a 3 day roller coaster of vivacious elation and pleasure. This Waves, be prepared to let go of your true self as you morph into an upgraded version, full of delight and uncontrolled jubilation. This Waves, be the one to write your tale afresh, a tale never to be forgotten.<br><br>
+
+A Tale In Two Shades
+</div>
+</div>
+</div>
+<div class="only_mob">
+<div class="about12 " style="" data-0="display:none;" data-1500="display:block; left:100%;" data-1700="left:5%;" data-2150="left:5%" data-2450="left:-100%;" >
+<div class="about_writeup" style="padding:5px;font-family: simplifica ;font-size:20px; ">
+"Where there is light,
+There is shadow."<br><br><br>
+
+Demons cannot prosper without the goodness of angels and there is no Yin without Yang. After surfing the tides of time last year, Waves 2017 brings you a chance to explore the dark side. Join us from the 27th of October as we lose ourselves to the feeling of devilish and godly euphoria, painting ourselves with a mixture of exultation and excitement, unlike the kind you have ever seen in your life.<br>
+This Waves, be the one to write your tale afresh, a tale never to be forgotten.
+<br><br>
+
+<b>A Tale In Two Shades</b>
+</div>
+</div>
+</div>
+
+<div class="events_head_new" style="top: 13%; width: 100%; height: 20%; text-align: center;  font-family: 'Pacifico', cursive; font-size: 40px; font-size: 40px; color: white;" data-0="display:none;" data-2450="display:block; left:100%;" data-2650="left:0%;" data-3650="left:0%;" data-3950="left:-100%;" >
+Events
+
+</div>
+<div class="only_desk">
+<a href="beauvista">
+<div class="minifests" style="top: 20%; width: 70%; height: 35%;  color: white; background: #6c5b7b" data-0="display:none;" data-2450="display:block; left:100%;" data-2650="left:30%;" data-3050="left:30%" data-3350="left:-100%;" >
+	<img src="/static/main/images1/events/smtf.JPG" style="height: 100%; width: 40%; float: left;">
+	<div id="minifest_writeup" style=" width: 55%; text-align: center; margin-left: 42%; padding-top: 60px; padding-left: 10px;">
+		<span style="font-style: lovelo; font-size:25px;"><b>Beau Vista</b></span>
+	<br><br>
+	<div class="only_desk">
+"Dressing well is just another form of good manners"<br><br>
+Waves 2017's first mini-fest of the year, Beau Vista, is a combination of the best of both worlds. The art of designing, when combined with the talent of FashP gives you something unlike you have ever seen before. With 4 events under this venture, prepare the artist within you to be tested and tried as you go one on one against the best of the country.
+</div>
+</div>
+</div>
+</a>>
+<a href="/florence">
+<div class="minifests" style="top: 60%; width: 70%; height: 35%; color: white;background: #c06c84 " data-0="display:none;" data-2450="display:block; left:-100%;" data-2650="left:00%;"  data-3050="left:0%" data-3350="left:100%;">
+	<img src="/static/main/images1/events/fashp.jpg" style="float: right; height: 100%; width: 40%;">
+	<div id="minifest_writeup" style=" width: 55%; text-align: center;  padding-top: 60px; padding-right: 10px; ">
+	⁠⁠⁠<span style="font-style: lovelo ; font-size:25px"><b>Florence</b></span><br><br>
+<div class="only_desk">
+		"The objective of art is nothing but to give life a shape"<br><br>
+The second stepping stone in this year's Waves, is our performing arts mini-fest, Florence, whose name aptly describes the kind of events it comprises of. With about 10 events from varying fields of Dance, Drama, and Music, prepare yourself as you take the stage and grasp the audience' awe with your amazing moves, your melodious notes or your convincing expressions as an actor.
+	</div>
+	</div>
+</div>
+</a>
+<a href="/carpedictum">
+<div class="minifests" style="top: 20%; width: 70%; height: 35%;  color: white; background: #6c5b7b" data-0="display:none;" data-3050="display:block; left:100%;" data-3250="left:30%;" data-3650="left:30%" data-3950="left:-100%;" >
+	<img src="/static/main/images1/events/moot.JPG" style="height: 100%; width: 40%; float: left; ">
+	<div id="minifest_writeup" style=" width: 55%; text-align: center; margin-left: 42%;padding-top: 60px; padding-left: 10px;">
+		<span style="font-style: lovelo;font-size:25px"><b>Carpe Dictum</b></span><br><br>
+		<div class="only_desk">
+“The purpose of literature is to turn blood into ink”<br><br>
+With words as your firearm and your logic as your ammo, step into the battlefield that is Carpe Dictum and brace yourselves for 4 of the most creative and exciting events, this year. Let the writer within you grab a sheet of paper and submit yourself to the beauty of words and the depth of rhymes that surround you. After all, who better to write a tale in two shades, than a writer?
+	</div>
+</div>
+</div>
+</a>
+<a href="/specials">
+<div class="minifests" style="top: 60%; width: 70%; height: 35%;  color: white;background: #c06c84"  data-0="display:none;" data-3050="display:block; left:-100%;" data-3250="left:0%;" data-3650="left:0%" data-3950="left:100%;">
+	<img src="/static/main/images1/events/mr_waves.jpg" style="float: right; height: 100%; width: 40%;">
+	<div id="minifest_writeup" style=" width: 55%; text-align: center;  padding-top: 60px; padding-right: 10px;">
+		<span style="font-style: lovelo;font-size:25px"><b>Specials</b></span><br><br>
+	<div class="only_desk">
+After the events that make up most of the fest, Waves’17 brings you the specials of our fest. With about 8 events that have their roots in a ton of varying fields, from Fashion to Law, from Literature to your DJing skills, be prepared to shock the crowd with the set of special talents you possess. Tickle the audience’ bellies with Show me the funny and impress strangers in an event that is the exact face of a tale in two shades: Strangely Familiar.
+</div>
+	</div>
+</div>	
+</a>
+</div>
+<!-- Mobile events -->
+<div class="only_mob">
+<a href="/beauvista">
+<div class="minifests" style="top: 30%; width: 70%; height: 20%;  color: white; background: #6c5b7b" data-0="display:none;" data-2450="display:block; left:100%;" data-2650="left:30%;" data-3050="left:30%" data-3350="left:-100%;" >
+	
+	<div id="minifest_writeup" style=" width: 100%; text-align: center; margin-top: 7%; height: 100%;">
+		<span style="font-style: lovelo; font-size:35px; "><b>Beau Vista</b></span>
+	<br><br>
+	The Design Fest
+
+
+</div>
+</div>
+</a>
+<a href="/florence">
+<div class="minifests" style="top: 70%; width: 70%; height: 20%; color: white;background: #c06c84 " data-0="display:none;" data-2450="display:block; left:-100%;" data-2650="left:00%;"  data-3050="left:0%" data-3350="left:100%;">
+	
+	<div id="minifest_writeup" style=" width: 100%; text-align: center;  margin-top: 7%;">
+	⁠⁠⁠<span style="font-style: lovelo ; font-size:35px;"><b>Florence</b></span><br><br>
+	The Performing Art Fest
+		
+
+	</div>
+</div>
+</a>
+<a href="carpedictum">
+<div class="minifests" style="top: 30%; width: 70%; height: 20%;  color: white; background: #6c5b7b" data-0="display:none;" data-3050="display:block; left:100%;" data-3250="left:30%;" data-3650="left:30%" data-3950="left:-100%;" >
+	
+	<div id="minifest_writeup" style=" width: 100%; text-align: center;  margin-top: 7%;">
+		<span style="font-style: lovelo ; font-size:35px;"><b>Carpe Dictum</b></span><br><br>
+		The Litrature Fest
+</div>
+</div>
+</a>
+<a href="/specials">
+<div class="minifests" style="top: 70%; width: 70%; height: 20%;  color: white;background: #c06c84"  data-0="display:none;" data-3050="display:block; left:-100%;" data-3250="left:0%;" data-3650="left:0%" data-3950="left:100%;">
+	
+	<div id="minifest_writeup" style=" width: 100%; text-align: center;   margin-top: 7%;">
+		<span style="font-style: lovelo ; font-size:35px;"><b>Specials</b></span><br><br>
+		Waves Special Fest
+
+	</div>
+</div>
+</a>
+</div>
+
+ <div class="moon_new only_desk" data-0="top:-100%" data-5900="top:10%" style="width: 200px; height: 200px;">
+<img src="/static/main/images1/moon.png" style="width: 100%; height: 100%;">
+</div>
+<div class="moon_new only_mob" data-0="top:-100%" data-5900="top:10%" style="width: 100px; height: 100px;">
+<img src="/static/main/images1/moon.png" style="width: 100%; height: 100%;">
+</div>
+
+<div class="sun_new" data-0="top:10%" data-1000="top:100%;" style="width: 30%;z-index: 104; height: 40%; left: 5%">
+<img src="/static/main/images1/Tits.png" style="width: 100%; height: 100%;">
+	
+</div>
+<div class="sun_new" data-0="top:93%" data-1000="top:100%;" style="width: 100%;z-index: 104; height: 40%; text-align: center; color: white;">
+<div class="scroll_down" style="background: rgb(250,250,250,0.2); width: 200px;height: 20px; display: inline-block;padding: 10px;border-radius: 10px;font-style: lovelo;">Scroll Down to Go Up</div>
+	
+</div>
+<div class="sun_new" data-0="top:-100%" data-4000="top:-100%" data-4500="top:50%;" style="width: 100%;z-index: 104; height: 40%; text-align: center; color: white;">
+<a href="/reg" style="text-decoration: none; color: white;">
+<div class="scroll_down" style="  background:  rgba(101,89,174, 0.0) ; /* For browsers that do not support gradients */
+  /*background: -webkit-linear-gradient(left, #6559ae , #ff7159); /* For Safari 5.1 to 6.0 */*/
+  /*background: -o-linear-gradient(right, #6559ae, #ff7159); /* For Opera 11.1 to 12.0 */*/
+  /*background: -moz-linear-gradient(right, #6559ae, #ff7159); /* For Firefox 3.6 to 15 */*/
+  /*background: linear-gradient(to right, #6559ae , #ff7159); /* Standard syntax */; width: 400px;height: 45px; display: inline-block;padding: 10px; font-family: 'Pacifico', cursive; font-size: 40px; font-size: 60px;">Register Now</div>
+	</a>
+</div>
+
+
+<!-- Main Website Ends Here -->
+<!-- Splash Screen Here -->
+<div class="splash" style="width: 100%; height: 100%; position: fixed; top: 0; background: white; z-index: 99999999; text-align: center; overflow: hidden;">
+<div class="out">
+  <div class="wave first"></div>
+  <div class="wave second"></div>
+  <div class="wave third"></div>
+     <div class="wave forth"></div>
+     <div class="wave fifth"></div>
+  <div class="circle">
+  </div>
+</div>
+</div>
+<!-- Splash Screen Ends Here -->
+
+	</div>
+
+</div>
+
+	<script type="text/javascript" src="/static/main/js/skrollr.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="../skrollr-ie/dist/skrollr.ie.min.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript">
+	var s = skrollr.init({
+		edgeStrategy: 'set',
+		easing: {
+			WTF: Math.random,
+			inverted: function(p) {
+				return 1-p;
+			}
+		}
+	});
+	</script>
+
+<script type="text/javascript">
+	var tl = new TimelineMax({
+	repeat:-1,
+	yoyo:true
+});
+
+tl.to("#distortion", 1, {attr:{scale:60}, ease:Power2.easeOut})
+.to("#distortion", 1, {attr:{scale:40}, ease:Power2.easeOut});
+</script>
+<script type="text/javascript">
+$(".splash").delay(3000).fadeOut();
+
+</script>
+<script type="text/javascript">
+	function myFunction(x) {
+    x.classList.toggle("change");
+} 
+</script>
+<script type="text/javascript">
+	$(function() {
+  var menuVisible = false;
+  $('#mob_icon').click(function() {
+    if (menuVisible) {
+      $('#myMenu').css({'display':'none'});
+      $('body').css({'background':'#A8D2DE'});
+      $('.back_box').css({'width':'100%'});
+      $('.back_box').css({'height':'10%'});
+     
+      menuVisible = false;
+      return;
+    }
+    $('#myMenu').css({'display':'block'});
+      $('body').css({'background':'#c43235'});
+      $('.back_box').css({'width':'100%'});
+      $('.back_box').css({'height':'100%'});
+   
+    menuVisible = true;
+  });
+ 
+});
+</script>
+
+</body>
+
+</html>
