@@ -32,7 +32,7 @@ class florence(View):
 class events(View):
 	def get (self, request, *args, **kwargs):
 		context={}
-		return render(request, "events.html", context)
+		return render(request, "events2.html", context)
 		underconstruction
 
 class underconstruction(View):

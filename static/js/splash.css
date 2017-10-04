@@ -1,0 +1,95 @@
+
+
+.out{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 2px 30px rgba(black, .2);
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 20%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: spin 10000ms infinite linear;
+  
+  .circle{
+   width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: inset 0 2px 30px rgba(black, .2);
+    background-color:white;
+  position: relative;
+    z-index:2;
+    overflow:hidden;
+    //mix-blend-mode:color;
+      //background: linear-gradient(#0095ff,white); /* Standard syntax */
+  }
+  
+}
+.wave{
+opacity: .2;
+  position: absolute;
+  top: 55%;
+  left: -80%;
+  background: #0095ff;
+  width: 500px;
+  height: 500px;
+  transform-origin: 50% 48%;
+  border-radius: 40%;
+  animation: drift_first 8000ms infinite linear;
+}
+.second{
+  top: 60%;
+  border-radius: 43%;
+  animation: drift_second 7800ms infinite linear;
+   //background: #0095ff;
+}
+.third{
+  top: 65%;
+  border-radius: 33%;
+    animation: drift_first 8200ms infinite linear;
+   //background:  #0af ;
+}
+.forth{
+  top: 70%;
+  border-radius: 37%;
+ // background: #0095ff;
+  animation: drift_second 7900ms infinite linear;
+  
+}
+.fifth{
+   top: 75%;
+  border-radius: 45%;
+  //background: #00f3ff;
+  animation: drift_first 8100ms infinite linear;
+}
+
+@keyframes drift_first {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@keyframes drift_second {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+@keyframes spin{
+    0% { transform: rotate(360deg); }
+  20%{
+    transform: rotate(340deg);
+  }
+  40%{
+    transform: rotate(360deg);
+  }
+  60%{
+    transform:rotate(380deg);
+  }
+  100% { transform: rotate(360deg); }
+}
+@media(max-width:800px){
+  .out{
+    margin-top: 50%;
+  }
+}
