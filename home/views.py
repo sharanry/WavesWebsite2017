@@ -39,3 +39,8 @@ class underconstruction(View):
 	def get (self, request, *args, **kwargs):
 		context={}
 		return render(request, "under_construction.html", context)		
+
+class contactus(View):
+	def get (self, request, *args, **kwargs):
+		context={}
+		return render(request, "contact_us.html", context)		
