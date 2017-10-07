@@ -33,7 +33,7 @@ class ohSnap(View):
 	def get (self, request, *args, **kwargs):
 		context ={}
 
-		return render(request, "events/final/oh_snap.html", context)
+		return render(request, "events/final/ohsnap.html", context)
 
 class short(View):
 	def get (self, request, *args, **kwargs):
