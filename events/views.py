@@ -155,7 +155,7 @@ class moot(View):
 	def get (self, request, *args, **kwargs):
 		context ={}
 
-		return render(request, "events/final/moot.html", context)			
+		return render(request, "events/moot.html", context)			
 
 class carpedictum(View):
 	def get (self, request, *args, **kwargs):
