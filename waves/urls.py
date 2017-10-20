@@ -19,7 +19,7 @@ from django.contrib import admin
 from spinoff.views import spinoffreg
 from smtf.views import smtfreg
 from poetryslam.views import inversereg
-from home.views import home, beauvista, events, carpedictum, specials, florence, underconstruction, contactus
+from home.views import home, beauvista, events, carpedictum, specials, florence, underconstruction, contactus, ourteam
 from csr.views import csr, csrreg
 from registration.views import reg
 from events import views as EventViews
@@ -50,7 +50,7 @@ urlpatterns = [
     url(r'^beauvista/$', underconstruction.as_view(), name='beauvista'),
     url(r'^specials/$', specials.as_view(), name='specials'),
     url(r'^florence/$', florence.as_view(), name='florence'),
-    url(r'^our_team/$', underconstruction.as_view(), name='underconstruction'),
+    url(r'^our_team/$', ourteam.as_view(), name='ourteam'),
     url(r'^sponsors/$', underconstruction.as_view(), name='underconstruction'),
     url(r'^contact_us/$', contactus.as_view(), name='contactus'),
 
