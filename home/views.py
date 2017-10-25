@@ -49,3 +49,8 @@ class ourteam(View):
 	def get (self, request, *args, **kwargs):
 		context={}
 		return render(request, "our_team.html", context)				
+
+class sponsors(View):
+	def get (self, request, *args, **kwargs):
+		context={}
+		return render(request, "sponsors.html", context)			
