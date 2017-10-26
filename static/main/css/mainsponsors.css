@@ -1,0 +1,408 @@
+html, body, div, span, p, a, del, em, img, ol, ul, li, fieldset, form, label {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html, body {
+	line-height: 1;
+	min-height:100%;
+	font-family:Artial, Verdana, sans-serif;
+}
+
+body {
+	background: #A8D2DE;
+	/*background: -webkit-linear-gradient(top, #000, #000 100%);
+	background: -moz-linear-gradient(top, #A8D2DE, #A8D2DE0 100%);
+	background: -o-linear-gradient(top, #A8D2DE, #A8D2DE 100%);
+	background: -ms-linear-gradient(top, #A8D2DE, #A8D2DE 100%);
+	background: linear-gradient(top, #A8D2DE, #A8D2DE 100%);*/
+	background-attachment:fixed;
+	
+}
+/*A8D2DE*/
+ol, ul {
+	list-style: none;
+}
+
+p {
+	margin:1em 0;
+	line-height:1.1em;
+}
+
+q {
+	font-style:italic;
+	color:#333;
+}
+
+h1 {
+	font-size:2.91em;
+	margin:0;
+}
+
+h1 > small {
+	text-align:right;
+	display:inline-block;
+	font-size:.71em;
+	text-indent:15em;
+	color:#444;
+}
+
+h2 {
+	color:inherit;
+	font-size:1.91em;
+	margin:2em 0 1em 0;
+}
+
+h2:first-child {margin-top:0;}
+
+h3 {
+	color:#333;
+	font-size:1.41em;
+	margin:1em 0;
+}
+
+h4 {
+	color:#444;
+	font-size:1.11em;
+	margin:1em 0;
+}
+
+/*new changes*/
+
+.main-logo{
+	 width: 500px; margin-left: 0px;
+}
+/*new changes end*/
+
+#progress {
+	height:2%;
+	background:#444;
+	bottom:0;
+	z-index:200;
+}
+
+#scrollbar {
+	position:fixed;
+	right:2px;
+	height:50px;
+	width:6px;
+	background:#444;
+	background:rgba(0,0,0,0.6);
+	border:1px solid rgba(255,255,255,0.6);
+	z-index:300;
+	border-radius:3px;
+}
+
+.skrollr-desktop #scrollbar {display:none;}
+
+#bg1, #bg2, #bg3 {
+	z-index:50;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:url(images/bubbles.png) repeat 0 0;
+}
+
+
+
+
+
+
+
+
+#easing_wrapper {
+	width:100%;
+	height:100%;
+}
+
+#easing {
+	
+	width:75%;
+	z-index:101;
+	text-align: center;
+}
+.main-sk {
+	top: 75px;
+}
+#logo{
+	height: 80%;
+	width: 12%;
+	margin-top: 5px;
+}
+
+
+.scroll-data{
+
+}
+.nav-bar{
+	position: fixed; top: 0; z-index: 1000; width: 100%; height: 10%;
+	text-align: center;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+@keyframes wave1 {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0,5px,0);
+  }
+  50% {
+    transform: translate3d(0,5px,0);
+  }
+}
+
+
+li{
+	display: inline;
+}
+svg text {
+		font-family: 'Oswald', sans-serif;
+		font-weight: 700;
+		text-transform: uppercase;
+		stroke-width: 3px;
+		stroke-linejoin: round;
+}
+.lg_menu{
+	position: absolute;
+	font-size: 25px;
+	
+}
+#right_menu{
+	top: 25px;
+	width: 43%
+}
+#left_menu{
+	left: 57%;
+	top: 25px;
+	width: 43%;
+}
+.lg_item{
+	padding: 25px;
+	color: white;
+}
+.lg_item:hover{
+	color: #eee;
+
+}
+.nav-bar a{
+	color: white;
+}
+.nav-bar a:hover{
+	color: #ddd;
+}
+
+.mob_events{
+	display: none;
+}
+#mob_icon{
+	left: 5%;
+	top:20%;
+	display: none;
+}
+#myMenu{
+	display: none;
+	margin-right: 100%;
+
+}
+.mob_lg_item{
+	display: block;
+	margin-left: 50px;
+	font-family: 'Josefin Slab', serif;
+	font-size: 25px;
+	border-top:1px solid white;
+	padding: 20px;
+	width: 80%;
+}
+.mob_lg_item:hover{
+	background:  #222;
+
+}
+#myMenu{
+	margin-top: 15px;
+}
+.back_box{
+	background-color: rgba(0,0,0,0.35); width: 100%; height:8%; position: fixed; z-index: 99999; -webkit-transform-origin:0 0;
+	-moz-transform-origin:0 0;
+	-ms-transform-origin:0 0;
+	-o-transform-origin:0 0;
+	transform-origin:0 0;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.mob_display{
+		display: none;
+	}
+.only_mob{
+	display: none;
+}
+/*only css that is important*/
+.events_head{
+	height: 100%;top: 50%; color: white; z-index: 11;text-align: center; width: 30%;font-family: 'Eczar', serif;top: 40%;
+}
+.events_text{
+ font-size: 40px; 
+}
+.about_text{
+	font-size: 40px;
+}
+.about12{
+	top: 25%; width: 70%; height: 50%; text-align: center;background: #6c5b7b;
+}
+/*It ends all here*/
+@font-face {
+    font-family: lovelo;
+    src: url("/static/main/fonts/lovelo_black.otf") format("opentype");
+}
+@font-face {
+    font-family: simplifica;
+    src: url("/static/main/fonts/SIMPLIFICA.ttf") format("truetype");
+}
+
+@media(max-width:1440px){
+.lg_menu{
+	display: none;
+}
+#mob_icon{
+	display: block;
+}
+}
+@media(max-width:800px){
+	.only_mob{
+		display: block;
+	}
+	.about12{
+		width: 90%; height: 70%;
+	}
+	.only_desk{
+		display: none;
+	}
+	
+	.desk_display{
+		display: none;
+	}
+	.mob_display{
+		display: block;
+	}
+	.front_text{
+	left:5%;
+	z-index: 1;font-family: 'Josefin Slab', serif;font-size: 20px;
+}
+	#mob_icon{
+	display: block;
+	height: 10%;
+}
+.back_box{
+	left:0%;top: 0.0% ; width: 100%; height:10%; position: fixed; z-index: 99999; -webkit-transform-origin:0 0;
+	-moz-transform-origin:0 0;
+	-ms-transform-origin:0 0;
+	-o-transform-origin:0 0;
+	transform-origin:0 0;
+	border-radius:0em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.
+/*.mob_menu_item{
+	display: block;
+}*/
+	.baloon{
+		left: 60%;
+	}
+	#baloon_front{
+		width: 210%;
+	}
+	.desktop_events{
+		display: none;
+	}
+	.mob_events{
+		display: block;
+	}
+	#tbt1{
+	 -ms-transform: rotate(90deg); /* IE 9 */
+	
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+}
+#tbt2{
+	 -ms-transform: rotate(-90deg); /* IE 9 */
+	
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+}
+  
+	.lg_menu{
+		display: none;
+	}
+	
+	#logo{
+		width: 30%;
+		height: 80%;
+	}
+}
+@media(max-width:500px){
+
+#easing {
+	
+	width:100%;
+}
+
+#logo{
+		width: 30%;
+	}
+.main-logo{
+	width: 300px;
+}
+  
+}
